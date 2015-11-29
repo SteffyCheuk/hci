@@ -1,3 +1,15 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+</html> 
+
 <?php
 # This function reads your DATABASE_URL configuration automatically set by Heroku
 # the return value is a string that will work with pg_connect
@@ -17,3 +29,4 @@ else {
  
 // $result = pg_query($db, "SELECT statement goes here");
 ?>
+
