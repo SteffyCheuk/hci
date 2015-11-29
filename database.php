@@ -67,7 +67,8 @@ CREATE TABLE settings (
   language        TEXT,
   sound           INT
 );
-"
+
+";
 
 $result = pg_query($db, $setup_db);
 
