@@ -1,15 +1,3 @@
- <!DOCTYPE HTML>
-<html>
-<head>
-<title>Title of the document</title>
-</head>
-
-<body>
-The content of the document......
-</body>
-
-</html> 
-
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
@@ -32,4 +20,19 @@ else {
  
 // $result = pg_query($db, "SELECT statement goes here");
 ?>
+
+ <!DOCTYPE HTML>
+<html>
+  <head>
+    <title>M.A.P. - Memos and Protection </title>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      
+    </div>
+  </body>
+
+</html> 
 
