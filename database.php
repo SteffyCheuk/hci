@@ -70,6 +70,6 @@ CREATE TABLE settings (
 );
 "
 
-$result = pg_query($db, "SELECT statement goes here");
+$result = pg_query($db, $setup_db);
 
 ?>
