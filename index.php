@@ -28,7 +28,7 @@ if (!$db) {
   <body>
     <div id="container">
       <div id="navigation">
-        <ul>
+        <ul id="navigation-list">
           <a><li class="navigation-link">TASKS</li></a>
           <a><li class="navigation-link">MAP</li></a>
           <a><li class="navigation-link">CAREGIVEr</li></a>
