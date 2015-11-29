@@ -50,7 +50,7 @@ $setup_locations = "
     time            TIME,
     location        TEXT,
     long            DECIMAL,
-    lat             DECIMAL,
+    lat             DECIMAL
   );";
 
 $setup_saved_locations = "
