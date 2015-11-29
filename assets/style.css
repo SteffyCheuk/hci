@@ -13,5 +13,18 @@ html, body {
   width: 400px;
   height: 600px;
   background-color: #00416A;
+}
 
+#navigation {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 150px;
+}
+
+.navigation-link {
+  position: relative;
+  width: 200px;
+  height: 75px;
+  border: 1px white solid;
 }
