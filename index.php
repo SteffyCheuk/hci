@@ -13,11 +13,8 @@ function pg_connection_string() {
 $db = pg_connect(pg_connection_string());
 if (!$db) {
   echo "Database connection error.";
-} 
-else {
-  echo "<html> <h1> Hello! </h1> </html> ";
 }
- 
+
 // $result = pg_query($db, "SELECT statement goes here");
 ?>
 
@@ -30,7 +27,7 @@ else {
 
   <body>
     <div id="container">
-      
+
     </div>
   </body>
 
