@@ -10,9 +10,9 @@ $db = pg_connect(pg_connection_string());
 if (!$db) {
   echo "Database connection error."
   exit;
-}
+} 
 else {
-  echo "<html> <h1> Hello! </h1> </html> "
+  echo "<html> <h1> Hello! </h1> </html> ";
 }
  
 // $result = pg_query($db, "SELECT statement goes here");
