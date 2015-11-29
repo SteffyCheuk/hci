@@ -11,6 +11,8 @@ The content of the document......
 </html> 
 
 <?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 # This function reads your DATABASE_URL configuration automatically set by Heroku
 # the return value is a string that will work with pg_connect
 function pg_connection_string() {
