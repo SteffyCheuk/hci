@@ -8,8 +8,7 @@ function pg_connection_string() {
 # Establish db connection
 $db = pg_connect(pg_connection_string());
 if (!$db) {
-  echo "Database connection error."
-  exit;
+  echo "Database connection error.";
 }
  
 $setup_db = "
