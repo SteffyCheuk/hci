@@ -36,7 +36,8 @@
                 echo "<a href='tasks.php'>Go to Tasks</a>";
               }
               $result = pg_query($db, "SELECT id FROM users WHERE email = '{$email}';");
-              $_SESSION['user'] = $result[0]; 
+              $row = pg_fetch_assoc($result);
+              $_SESSION['user'] = $row["id"]; 
             }
           }
           else {

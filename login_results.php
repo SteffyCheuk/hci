@@ -22,20 +22,17 @@
             $result = pg_query($db, $sql);
 
             if ($result){
-              if ($password != $result['password']) {
-                echo $password;
-                echo "<br/>";
-                echo $result['password'];
-                echo "<br/>";
+              $row = pg_fetch_assoc($result);
+              if ($password != $row['password']) {
                 echo "Passwords do not match!  Please try again.";
               }
               else {
-                $first_name = $result["first_name"];
-                $last_name = $result["last_name"];
+                $first_name = $row["first_name"];
+                $last_name = $row["last_name"];
                 echo "<h4>Welcome {$first_name} {$last_name}!</h4>";
                 echo "<h4>Let's get started.</h4>";
                 echo "<a href='tasks.php'>Go to Tasks</a>";
-                $_SESSION['user'] = $result['id']; 
+                $_SESSION['user'] = $row['id']; 
               }
             }
           }
