@@ -70,7 +70,11 @@
       headerTag: "h4",
       bodyTag: "section",
       transitionEffect: "slideLeft",
-      autoFocus: true
+      autoFocus: true, 
+      onFinished: function (e, i) {
+        var form = $(this);
+        form.submit();  
+      }
     });
   }); 
 </script>
