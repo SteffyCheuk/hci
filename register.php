@@ -10,7 +10,6 @@
 
   <body>
     <div id="container">
-
       <?php require_once "partials/DB.php"; ?>
       <!-- REGISTRATION WIZARD FORM -->
       <form id="registration" name="registration" method="post" action="register_results.php">
@@ -56,10 +55,6 @@
           </table>
         </section>
       </form>
-      <?php 
-        
-      ?>
-
     </div>
   </body>
 </html> 

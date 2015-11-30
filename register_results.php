@@ -12,6 +12,7 @@
     <div id="container">
       <div id="success">
         <?php
+          require_once "partials/DB.php";
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $type = $_POST["type"];
             $first_name = trim($_POST["first-name"]);
@@ -27,9 +28,14 @@
               $options = [ 'cost' => $i, 'salt' => 'catscatscats' ];
               $password = password_hash($password, PASSWORD_BCRYPT, $options);
               $sql = "INSERT INTO users VALUES ({$first_name}, {$last_name}, {$type}, {$email}, {$password}, {$phone});";
-              echo "<h2>Welcome {$first_name} {$last_name}!</h2>";
-              echo "<h2>Let's get started.</h2>";
-              echo "<a href='tasks.php'>Go to Tasks</a>";
+              $result = pg_query($db, $sql);
+              if ($result){
+                echo "<h2>Welcome {$first_name} {$last_name}!</h2>";
+                echo "<h2>Let's get started.</h2>";
+                echo "<a href='tasks.php'>Go to Tasks</a>";
+              }
+              $result = pg_query($db, "SELECT id FROM users WHERE email = {$email};")
+              $_SESSION['user'] = $result[0]; 
             }
           }
         ?>
