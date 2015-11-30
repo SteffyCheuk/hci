@@ -14,7 +14,7 @@
 
   $setup_tasks = " 
     CREATE TABLE tasks (
-      id              INT         PRIMARY KEY,    
+      id              SERIAL       PRIMARY KEY,    
       older_adult_id  INT,
       owner_id        INT,
       title           TEXT,
@@ -27,7 +27,7 @@
 
   $setup_relationships = "
     CREATE TABLE relationships (
-      id              INT         PRIMARY KEY,
+      id              SERIAL       PRIMARY KEY,
       caregiver_id    INT,
       older_adult_id  INT,
       permissions     BOOLEAN
@@ -35,7 +35,7 @@
 
   $setup_locations = "
     CREATE TABLE locations (
-      id              INT         PRIMARY KEY,
+      id              SERIAL       PRIMARY KEY,
       older_adult_id  INT,
       date            DATE,
       time            TIME,
@@ -46,7 +46,7 @@
 
   $setup_saved_locations = "
     CREATE TABLE saved_locations (
-      id              INT         PRIMARY KEY,
+      id              SERIAL       PRIMARY KEY,
       older_adult_id  INT,
       name            TEXT,
       location        TEXT,
@@ -56,7 +56,7 @@
 
   $setup_settings = "
     CREATE TABLE settings (
-      id              INT         PRIMARY KEY,
+      id              SERIAL       PRIMARY KEY,
       user_id         INT,
       font_size       TEXT,
       language        TEXT,
