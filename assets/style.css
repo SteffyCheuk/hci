@@ -99,7 +99,13 @@ input[type="text"], input[type="password"] {
   margin-bottom: 8px;
 }
 
-section {
+.body {
+  display: block;
+  height: 400px;
+  width: 350px;
+}
+
+.content {
   display: block;
   height: 400px;
   width: 350px;
