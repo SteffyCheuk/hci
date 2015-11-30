@@ -16,27 +16,22 @@
           session_start();
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $type = $_POST["type"];
-            $first_name = trim($_POST["first-name"]);
-            $last_name = trim($_POST["last-name"]);
-            $phone = trim($_POST["phone"]);
             $email = trim($_POST["email"]);
             $password = $_POST["password"];
-            $password_validation = $_POST["password-validation"];
-            if ($password != $password_validation) {
-              echo "Passwords do not match!  Please try again.";
-            }
-            else {
-              $password = password_hash($password, PASSWORD_BCRYPT);
-              $sql = "INSERT INTO users (first_name, last_name, type, email, password, phone)
-                      VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
-              $result = pg_query($db, $sql);
-              if ($result){
+            
+            $sql = "SELECT * FROM users WHERE email = '{$email}';";
+            $result = pg_query($db, $sql);
+
+            if ($result){
+              if ($password != $result['password']) {
+                echo "Passwords do not match!  Please try again.";
+              }
+              else {
                 echo "<h4>Welcome {$first_name} {$last_name}!</h4>";
                 echo "<h4>Let's get started.</h4>";
                 echo "<a href='tasks.php'>Go to Tasks</a>";
+                $_SESSION['user'] = $result['id']; 
               }
-              $result = pg_query($db, "SELECT id FROM users WHERE email = '{$email}';");
-              $_SESSION['user'] = $result[0]; 
             }
           }
           else {

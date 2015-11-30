@@ -1,6 +1,6 @@
 <div id="form">
   <h2> M.A.P. </h2>
-  <form id="login" name="login" method="post" action="tasks.php">
+  <form id="login" name="login" method="post" action="login_results.php">
     Email: 
     <br/>
     <input class="large" id="email" type="text"> 
