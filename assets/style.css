@@ -133,7 +133,7 @@ input[type="radio"] + label {
   display:block;
   height: 100px;
   width: 300px;
-  margin: auto;
+  margin: 20px;
   margin-top: 20px;
   padding: 0px 12px;
   background-color: #e7e7e7;
