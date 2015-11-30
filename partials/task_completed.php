@@ -1,5 +1,5 @@
 <?php
-  require_once "partials/DB.php";
+  require_once "DB.php";
 
   if (isset($_POST["id"])){
     $done = $_POST["checked"];
