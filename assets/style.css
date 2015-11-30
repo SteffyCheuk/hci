@@ -116,9 +116,10 @@ input[type="text"], input[type="password"] {
 }
 
 .wizard > .content {
+  background-color: transparent;
   width: 98%;
 }
 
 .wizard > .steps li {
-  width: 100px;
+  width: 100px !important;
 }
