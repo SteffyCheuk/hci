@@ -10,7 +10,7 @@
     <div id="container">
       <div id="modal">
         <h4 class="centered"> Add Tasks </h4>
-        <form id="add_task" action="add_task" method="post">
+        <form id="add_task" action="tasks.php" method="post">
           <input type="text" id="add-task-title" name="title" placeholder="add task title...">
           <textarea id="add-task-description" name="description" placeholder="add task description..."></textarea>
           <input id="add-task-location" type="text" name="location" placeholder="add a location...">
@@ -40,7 +40,7 @@
           if (isset($_SESSION["user"])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               // this means that an account was registered... or that a task was added. 
-              if (isset($_POST["title"]) {
+              if (isset($_POST["title"])) {
                 $title = $_POST["title"];
                 $description = $_POST["description"];
                 $location = $_POST["location"];
