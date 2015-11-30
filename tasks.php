@@ -9,8 +9,26 @@
     <div id="container">
     
       <?php require_once "partials/DB.php"; ?>
+      <?php include "partials/header.php"; ?>
 
-      <!-- MAIN CONTENT GOES HERE -->
+      <!-- TASK HEADER -->
+      <div id="Tasks">
+        TASKS
+        <img src="./assets/task.png" alt="pic">
+      </div>
+
+      <?php 
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+          // this means that an account was registered...
+
+        }
+        else if (isset($_SESSION["user"])){
+          // display tasks
+        }
+        else {
+          echo "Error";
+        }
+      ?>
 
       <?php include "partials/navigation.php"; ?>
 
