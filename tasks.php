@@ -46,12 +46,12 @@
                 $location = $_POST["location"];
                 $date = $_POST["date"];
                 $time = $_POST["time"];
-                $sql = "INSERT INTO tasks VALUES ($_SESSION['user'], $_SESSION['user'], $title, $description, $location, $date, $time, false, false);";
+                $sql = "INSERT INTO tasks VALUES ({$_SESSION['user']}, {$_SESSION['user']}, {$title}, {$description}, {$location}, {$date}, {$time}, false, false);";
                 $result = pg_query($db, $sql);
               }
             }
             // display tasks
-            $sql = "SELECT * FROM tasks WHERE older_adult_id = $_SESSION['user'];"
+            $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};"
             $result = pg_query($db, $sql);
             if (!$result) {
               echo "Error!";
