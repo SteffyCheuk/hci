@@ -277,23 +277,24 @@ input[type=radio]:checked + label {
   width: 360px;
   padding: 10px;
   margin: auto;
+  border-collapse:separate; 
+  border-spacing:10px;
 }
 
 .task-status {
-  width: 50px;
+  width: 30px;
   padding: 5px;
 }
 
 .task-details {
-  width: 230px;
+  width: 220px;
   padding: 5px;
   background-color: #95B5D8;
   border-radius: 5px;
-  margin-right: 10px;
+  line-height: 25px;
 }
 
 .task-trash {
-  padding-left: 20px !important;
-  width: 30px;
-  padding: 5px;
+  width: 22px;
+  padding: 0px 0px 1px 8px;
 }
