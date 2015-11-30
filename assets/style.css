@@ -114,11 +114,6 @@ input[type="text"], input[type="password"] {
   background-color: transparent;
 }
 
-.wizard > .content {
-  background-color: transparent;
-  width: 98%;
-  height: 300px;
-}
 
 .wizard > .steps li.disabled, .wizard > .steps li.current {
   width: 120px;
