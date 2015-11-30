@@ -14,8 +14,8 @@
           <input class="centered" type="text" name="title" placeholder="add task title...">
           <input class="centered" type="textarea" name="description" placeholder="add task description...">
           <input class="centered" type="text" name="location" placeholder="add a location...">
-          <input type="text" name="date" placeholder="mm/dd/yy">
-          <input type="text" name="time" placeholder="00:00">
+          <input class="centered" type="text" name="date" placeholder="mm/dd/yy">
+          <input class="centered" type="text" name="time" placeholder="00:00">
           <input type="submit" value="Add">
         </form>
       </div>

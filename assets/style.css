@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-#registration > input[type="text"], #registration > input[type="password"] {
+input.large[type="text"], input.large[type="password"] {
   margin: 0;
   padding: 4px;
   width: 240px;

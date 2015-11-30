@@ -26,15 +26,15 @@
           <table class="white">
             <tr>
               <td>First Name:</td>
-              <td><input type="text" name="first-name"></td>
+              <td><input class="large" type="text" name="first-name"></td>
             </tr>
             <tr>  
               <td>Last Name:</td>
-              <td><input type="text" name="last-name"></td>
+              <td><input class="large" type="text" name="last-name"></td>
             </tr>
             <tr>
               <td>Phone:</td>
-              <td><input type="text" name="phone"></td>
+              <td><input class="large" type="text" name="phone"></td>
             </tr>
           </table>
         </section>
@@ -43,15 +43,15 @@
           <table class="white">
             <tr>
               <td>Email:</td>
-              <td><input type="text" name="email"></td>
+              <td><input class="large" type="text" name="email"></td>
             </tr>
             <tr>
               <td>Password</td>
-              <td><input type="password" name="password"></td>
+              <td><input class="large" type="password" name="password"></td>
             </tr>
             <tr>
               <td>Confirm Password</td>
-              <td><input type="password" name="password-validation"></td>
+              <td><input class="large" type="password" name="password-validation"></td>
             </tr>
           </table>
         </section>
