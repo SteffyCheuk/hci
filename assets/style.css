@@ -221,4 +221,9 @@ input[type=radio]:checked + label {
   margin-top: 150px;
   z-index: 2;
   background-color: #BEBEBE;
+  border-radius: 10px;
+}
+
+.centered {
+  text-align: center;
 }

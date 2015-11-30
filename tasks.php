@@ -9,14 +9,14 @@
   <body>
     <div id="container">
       <div id="modal">
-        <h4> Add Tasks </h4>
+        <h4 class="centered"> Add Tasks </h4>
         <form id="add_task" action="add_task" method="post">
-          <input type="text" name="title">
-          <input type="textarea" name="description">
-          <input type="text" name="location">
-          <input type="text" name="date">
-          <input type="text" name="time">
-          <input type="submit" value="submit">
+          <input type="text" name="title" placeholder="add task title...">
+          <input type="textarea" name="description" placeholder="add task description...">
+          <input type="text" name="location" placeholder="add a location...">
+          <input type="text" name="date" placeholder="mm/dd/yy">
+          <input type="text" name="time" placeholder="00:00">
+          <input type="submit" value="Add">
         </form>
       </div>
       <div id="overlay">
