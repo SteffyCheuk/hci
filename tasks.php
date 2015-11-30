@@ -61,13 +61,13 @@
                   $date = 'null';
                 }
                 else {
-                  $date = "{$_POST['date']}";
+                  $date = "'{$_POST['date']}'";
                 }
                 if (!isset($_POST["time"]) || strlen(trim($_POST["time"])) == 0){
                   $time = 'null';
                 }
                 else {
-                  $time = "{$_POST['time']}";
+                  $time = "'{$_POST['time']}'";
                 }
 
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
