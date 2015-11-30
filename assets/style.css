@@ -287,6 +287,10 @@ input[type=radio]:checked + label {
 .task-details {
   width: 200px;
   padding: 10px;
+  background-color: #95B5D8;
+  border-radius: 8px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .task-trash {
