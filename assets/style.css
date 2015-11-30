@@ -215,15 +215,17 @@ input[type=radio]:checked + label {
 
 #modal {
   position:absolute;
-  width: 340px;
+  width: 320px;
   height: 200px;
   margin: 30px;
   margin-top: 150px;
   z-index: 2;
   background-color: #BEBEBE;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .centered {
   text-align: center;
+  margin: auto;
 }

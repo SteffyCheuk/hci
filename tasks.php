@@ -11,9 +11,9 @@
       <div id="modal">
         <h4 class="centered"> Add Tasks </h4>
         <form id="add_task" action="add_task" method="post">
-          <input type="text" name="title" placeholder="add task title...">
-          <input type="textarea" name="description" placeholder="add task description...">
-          <input type="text" name="location" placeholder="add a location...">
+          <input class="centered" type="text" name="title" placeholder="add task title...">
+          <input class="centered" type="textarea" name="description" placeholder="add task description...">
+          <input class="centered" type="text" name="location" placeholder="add a location...">
           <input type="text" name="date" placeholder="mm/dd/yy">
           <input type="text" name="time" placeholder="00:00">
           <input type="submit" value="Add">
