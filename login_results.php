@@ -16,13 +16,13 @@
           session_start();
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = trim($_POST["email"]);
-            $password = $_POST["password"];
+            $password = md5($_POST["password"]. "cat");
         
             $sql = "SELECT * FROM users WHERE email = '{$email}';";
             $result = pg_query($db, $sql);
 
             if ($result){
-              if (!password_verify($password, $result['password'])) {
+              if ($password != $result['password']) {
                 echo "Passwords do not match!  Please try again.";
               }
               else {

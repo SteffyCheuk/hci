@@ -26,7 +26,7 @@
               echo "Passwords do not match!  Please try again.";
             }
             else {
-              $password = password_hash($password, PASSWORD_BCRYPT);
+              $password = md5($password . "cat");
               $sql = "INSERT INTO users (first_name, last_name, type, email, password, phone)
                       VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
               $result = pg_query($db, $sql);
