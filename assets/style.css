@@ -40,7 +40,7 @@ html, body {
   width: 198px;
   float: left;
   text-align: center;
-  vertical-align: middle;
+  line-height: 73px;
 }
 
 a.navigation-link {
@@ -53,7 +53,6 @@ a.navigation-link {
   color: #1D2029;
   background-color: #C7E1FE;
   text-align: center;
-  vertical-align: middle;
 }
 
 a.navigation-link:hover {
