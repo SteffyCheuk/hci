@@ -231,7 +231,7 @@ input[type=radio]:checked + label {
   position:absolute;
   width: 180px;
   height: 130px;
-  margin: 140px;
+  margin: 100px;
   margin-top: 160px;
   z-index: 2;
   background-color: #C7E1FE;
