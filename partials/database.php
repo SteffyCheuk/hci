@@ -20,7 +20,8 @@
       title           TEXT,
       description     TEXT,
       location        TEXT,
-      deadline        TIMESTAMP,
+      deadline_date   DATE,
+      deadline_time   TIME,
       done            BOOLEAN,
       notified        BOOLEAN
     );";

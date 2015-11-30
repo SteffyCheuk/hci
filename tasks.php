@@ -47,7 +47,13 @@
                 $location = $_POST["location"];
                 $date = $_POST["date"];
                 $time = $_POST["time"];
-                $sql = "INSERT INTO tasks VALUES ({$_SESSION['user']}, {$_SESSION['user']}, {$title}, {$description}, {$location}, {$date}, {$time}, false, false);";
+                $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
+                                title, description, location, 
+                                deadline_date, deadline_time,
+                                done, notified) 
+                        VALUES ({$_SESSION['user']}, {$_SESSION['user']}, 
+                                {$title}, {$description}, {$location}, 
+                                {$date}, {$time}, false, false);";
                 $result = pg_query($db, $sql);
               }
             }
