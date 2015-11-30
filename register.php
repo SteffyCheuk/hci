@@ -42,7 +42,7 @@
 
 <script>
   $(document).ready(function () {
-     $("#register-form").steps({
+     $("#registration").steps({
       headerTag: "h3",
       bodyTag: "section",
       transitionEffect: "slideLeft",
