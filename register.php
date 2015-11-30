@@ -17,9 +17,9 @@
         <h3>Register</h3>
         <section>
           <input type="radio" id="caregiver" name="type" value="Caregiver">
-          <label for="caregiver">Caregiver</label>
+          <label for="caregiver">I am a caregiver</label>
           <input type="radio" id="older-adult" name="type" value="OlderAdult">
-          <label for="older-adult">Older Adult</label>
+          <label for="older-adult">I am an older adult</label>
         </section>
         <h3>Details</h3>
         <section>
