@@ -201,7 +201,13 @@
       e.stopPropagation();
       var $element = $(this).parent();
       $element.find('.dropdownPanel').fadeToggle(100);
-      $("#arrow").attr("src","./images/up_arrow_task.png");
+      if ($("#arrow").attr("src") == "./images/down_arrow_task.png") {
+        $("#arrow").attr("src","./images/down_arrow_task.png");
+        $("#arrow").attr("src","./images/up_arrow_task.png");
+      }
+      else {
+        $("#arrow").attr("src","./images/down_arrow_task.png");
+      }
     });
 
     $("body").click(function(){
