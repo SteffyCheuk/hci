@@ -67,7 +67,7 @@
                 echo 
                   "<tr> 
                     <td><img src='./images/white_check_box.png'></td>
-                    <td>$row['title']</td>
+                    <td>{$row['title']}</td>
                     <td><img src='./images/trash.png'></td>
                   </tr> 
                   "; 
