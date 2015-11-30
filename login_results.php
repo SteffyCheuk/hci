@@ -15,7 +15,6 @@
           require_once "partials/DB.php";
           session_start();
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $type = $_POST["type"];
             $email = trim($_POST["email"]);
             $password = $_POST["password"];
             
@@ -27,6 +26,8 @@
                 echo "Passwords do not match!  Please try again.";
               }
               else {
+                $first_name = $result["first_name"];
+                $last_name = $result["last_name"];
                 echo "<h4>Welcome {$first_name} {$last_name}!</h4>";
                 echo "<h4>Let's get started.</h4>";
                 echo "<a href='tasks.php'>Go to Tasks</a>";
