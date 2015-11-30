@@ -16,10 +16,10 @@
       <form id="registration" name="registration" method="post" action="tasks.php">
         <h3>Register</h3>
         <section>
-          <input type="radio" name="type" value="Caregiver">
-          <label for="Caregiver">Caregiver</label>
-          <input type="radio" name="type" value="OlderAdult">
-          <label for="OlderAdult">Older Adult</label>
+          <input type="radio" id="caregiver" name="type" value="Caregiver">
+          <label for="caregiver">Caregiver</label>
+          <input type="radio" id="older-adult" name="type" value="OlderAdult">
+          <label for="older-adult">Older Adult</label>
         </section>
         <h3>Details</h3>
         <section>
