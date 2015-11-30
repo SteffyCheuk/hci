@@ -63,12 +63,12 @@
       sound           INT
     );";
 
-  pg_query($db, "DROP TABLE IF EXISTS users")
-  pg_query($db, "DROP TABLE IF EXISTS tasks")
-  pg_query($db, "DROP TABLE IF EXISTS relationships")
-  pg_query($db, "DROP TABLE IF EXISTS locations")
-  pg_query($db, "DROP TABLE IF EXISTS saved_locations")
-  pg_query($db, "DROP TABLE IF EXISTS settings")
+  pg_query($db, "DROP TABLE IF EXISTS users");
+  pg_query($db, "DROP TABLE IF EXISTS tasks");
+  pg_query($db, "DROP TABLE IF EXISTS relationships");
+  pg_query($db, "DROP TABLE IF EXISTS locations");
+  pg_query($db, "DROP TABLE IF EXISTS saved_locations");
+  pg_query($db, "DROP TABLE IF EXISTS settings");
 
   $result = pg_query($db, $setup_users);
   $result = pg_query($db, $setup_tasks);
