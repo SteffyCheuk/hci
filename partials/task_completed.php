@@ -1,4 +1,5 @@
 <?php
+  require_once "partials/DB.php";
 
   if (isset($_POST["id"])){
     $done = $_POST["checked"];
@@ -11,5 +12,4 @@
   else {
     alert("error");
   }
-
 ?>
