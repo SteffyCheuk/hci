@@ -236,10 +236,10 @@ input[type=radio]:checked + label {
 
 #modal-trash {
   position:absolute;
-  width: 320px;
-  height: 230px;
-  margin: 30px;
-  margin-top: 150px;
+  width: 240px;
+  height: 200px;
+  margin: 70px;
+  margin-top: 160px;
   z-index: 2;
   background-color: #BEBEBE;
   border-radius: 10px;

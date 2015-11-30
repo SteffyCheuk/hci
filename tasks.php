@@ -21,7 +21,7 @@
         </form>
       </div>
       <div id="modal-trash">
-        <h4> Delete Task? </h4>
+        <h4 class='centered'> Delete Task? </h4>
       </div>
 
       <div id="overlay">
@@ -155,7 +155,7 @@
     $("#overlay").click(function() {
       $("#overlay").hide();
       $("#modal").hide();
-      $("#modal-trash").html("<h4> Delete Task? </h4>");
+      $("#modal-trash").html("<h4 class='centered'> Delete Task? </h4>");
       $("#modal-trash").hide();
     });
     $(".task-trash").click(function () {
