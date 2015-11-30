@@ -24,6 +24,9 @@
             if ($result){
               if ($password != $result['password']) {
                 echo $password;
+                echo "<br/>";
+                echo $result['password'];
+                echo "<br/>";
                 echo "Passwords do not match!  Please try again.";
               }
               else {
