@@ -27,12 +27,9 @@ html, body {
 }
 
 #navigation {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 400px;
   height: 150px;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 #navigation-list {
