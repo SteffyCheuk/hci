@@ -8,7 +8,7 @@
 
   <body>
     <div id="container">
-      <div id="model">
+      <div id="modal">
       </div>
       <div id="overlay">
       </div>
