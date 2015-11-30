@@ -153,8 +153,10 @@ input[type=radio]:checked + label {
 }
 
 #tasks {
+  width: 360px;
+  margin: 0px 20px 0px 20px;
   color: #BEBEBE;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .left {
