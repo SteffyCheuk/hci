@@ -9,6 +9,15 @@
   <body>
     <div id="container">
       <div id="modal">
+        <h4> Add Tasks </h4>
+        <form id="add_task" action="add_task" method="post">
+          <input type="text" name="title">
+          <input type="textarea" name="description">
+          <input type="text" name="location">
+          <input type="text" name="date">
+          <input type="text" name="time">
+          <input type="submit" value="submit">
+        </form>
       </div>
       <div id="overlay">
       </div>
