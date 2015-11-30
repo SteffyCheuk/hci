@@ -297,6 +297,7 @@ input[type=radio]:checked + label {
 .task-status {
   width: 30px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .task-details {
@@ -305,11 +306,13 @@ input[type=radio]:checked + label {
   background-color: #95B5D8;
   border-radius: 5px;
   line-height: 25px;
+  cursor: pointer;
 }
 
 .task-trash {
   width: 22px;
   padding: 0px 0px 1px 8px;
+  cursor: pointer;
 }
 
 .hidden {
