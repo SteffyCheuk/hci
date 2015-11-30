@@ -88,7 +88,10 @@
               while ($row = pg_fetch_assoc($result)) {
                 echo 
                   "<tr> 
-                    <td class='task-status'><img src='./images/white_check_box.png'></td>
+                    <td class='task-status'>
+                      <img class='checkbox' src='./images/white_check_box.png'>
+                      <img class='checkmark hidden' src='./images/check.png'>
+                    </td>
                     <td class='task-details'>{$row['title']}
                       <img src='./images/down_arrow_task.png' class='right'>
                     </td>
@@ -146,5 +149,14 @@
         $("#modal-trash").hide();
       });
     });
+    $(".task-status").click(function () {
+      var checkmark = $(this).find(".checkmark");
+      if (checkmark.hasClass("hidden")) {
+        checkmark.removeClass("hidden");
+      }
+      else {
+        checkmark.addClass("hidden");
+      }
+    })
   }); 
 </script>
