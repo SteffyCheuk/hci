@@ -64,7 +64,7 @@ a.navigation-link:hover {
 
 #login {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .button {
@@ -93,4 +93,5 @@ input[type="text"], input[type="password"] {
   border: 1px solid;
   border-radius: 5px;
   height: 30px;
+  margin-top: 5px;
 }
