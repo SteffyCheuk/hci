@@ -368,6 +368,11 @@ input[type=radio]:checked + label {
   margin: auto;
 }
 
+h3 {
+  font-size: 30;
+  color: white;
+}
+
 .btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -381,8 +386,10 @@ input[type=radio]:checked + label {
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  /*padding: 10px 20px 10px 20px;*/
   text-decoration: none;
+  width: 100px;
+  height: 40px;
 }
 
 .btn:hover {

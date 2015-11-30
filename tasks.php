@@ -21,7 +21,7 @@
         </form>
       </div>
       <div id="modal-trash">
-        <h4 class='centered'> Delete Task? </h4>
+        <h3 class='centered'> Delete Task? </h3>
       </div>
 
       <div id="overlay">
@@ -162,7 +162,7 @@
       var id = $(this).text();
       $("#overlay").show();
       $("#modal-trash").append(" \
-        <form name='task-deletion' method='post' action='tasks.php'> \
+        <form class='centered' name='task-deletion' method='post' action='tasks.php'> \
           <input type='hidden' name='id' value='" + id + "'>  \
           <input class='btn' type='submit' name='delete-form' value='Yes'> \
           <input class='btn' type='button' id='delete-cancel' name='cancel' value='No'> \
