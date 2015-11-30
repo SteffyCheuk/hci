@@ -20,6 +20,10 @@
           <input class="right" type="submit" value="Add">
         </form>
       </div>
+      <div id="modal-trash">
+        <h4> Delete Task? </h4>
+      </div>
+
       <div id="overlay">
       </div>
 
@@ -82,7 +86,9 @@
                     <td class='task-details'>{$row['title']}
                       <img src='./images/down_arrow_task.png' class='right'>
                     </td>
-                    <td class='task-trash'><img src='./images/trash.png'></td>
+                    <td class='task-trash'><img src='./images/trash.png'>
+                      <span class='hidden'>{$row['id']}</span>
+                    </td>
                   </tr> 
                   "; 
               }
@@ -113,6 +119,26 @@
     $("#overlay").click(function() {
       $("#overlay").hide();
       $("#modal").hide();
+      $("#modal-trash").html("<h4> Delete Task? </h4>");
+      $("#modal-trash").hide();
     });
+    $(".task-trash").click(function () {
+      var id = $(this).text();
+      $("#overlay").show();
+      $("#modal-trash").append("
+        <form name='task-deletion' method='post' action='task.php'>
+          <input type='hidden' value='" + id + "'> 
+          <input type='submit' name='delete-form' value='Yes'>
+          <input type='button' id='delete-cancel' name='cancel' value='No'>
+        </form>
+        ");
+      $("#modal-trash").show();
+    })
+    $("#delete-cancel").click(function () {
+      $("#overlay").hide();
+      $("#modal").hide();
+      $("#modal-trash").html("<h4> Delete Task? </h4>");
+      $("#modal-trash").hide();
+    })
   }); 
 </script>
