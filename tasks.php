@@ -73,7 +73,7 @@
             $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
             if ($result) {
-              echo "<table id='task-table'>";
+              echo "<table id='task-table' class='white'>";
               while ($row = pg_fetch_assoc($result)) {
                 echo 
                   "<tr> 
