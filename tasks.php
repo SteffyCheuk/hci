@@ -53,10 +53,7 @@
             // display tasks
             $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
-            if (!$result) {
-              echo "Error!";
-            }
-            else {
+            if ($result) {
               $arr = pg_fetch_all($result, 0, PGSQL_NUM);
               echo "<table>";
               for ($i = 0; $i < count($arr); $i++) {

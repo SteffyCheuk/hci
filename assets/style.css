@@ -259,3 +259,16 @@ input[type=radio]:checked + label {
   float: right;
   width: 100px;
 }
+
+#success {
+  position:absolute;
+  width: 320px;
+  height: 230px;
+  margin: 30px;
+  margin-top: 150px;
+  z-index: 2;
+  background-color: #BEBEBE;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}

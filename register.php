@@ -13,7 +13,7 @@
 
       <?php require_once "partials/DB.php"; ?>
       <!-- REGISTRATION WIZARD FORM -->
-      <form id="registration" name="registration" method="post" action="tasks.php">
+      <form id="registration" name="registration" method="post" action="register_results.php">
         <h4>Register</h4>
         <section>
           <input type="radio" id="caregiver" name="type" value="Caregiver">
