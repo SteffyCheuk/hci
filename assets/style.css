@@ -97,28 +97,20 @@ input[type="text"], input[type="password"] {
   margin-bottom: 8px;
 }
 
-/*.body {
-  display: block;
-  height: 400px;
-  width: 350px;
+input[type="radio"] {
+  display:none; 
+  margin:10px;
 }
 
-.content {
-  display: block;
-  height: 400px;
-  width: 350px;
-}*/
-
-.wizard {
-  background-color: transparent;
+input[type="radio"] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
 }
 
-.wizard > .content {
-  background-color: transparent;
-  width: 98%;
-  height: 300px;
-}
-
-.wizard > .steps li.disabled, .wizard > .steps li.current {
-  width: 120px;
+input[type=radio]:checked + label { 
+  background-image: none;
+  background-color:#d0d0d0;
 }

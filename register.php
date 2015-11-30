@@ -17,7 +17,9 @@
         <h3>Register</h3>
         <section>
           <input type="radio" name="type" value="Caregiver">
-          <input type="radio" name="type" value="Older Adult">
+          <label for="Caregiver">Caregiver</label>
+          <input type="radio" name="type" value="OlderAdult">
+          <label for="OlderAdult">Older Adult</label>
         </section>
         <h3>Details</h3>
         <section>
@@ -27,7 +29,7 @@
           <input type="password" name="password">
           <input type="password" name="password-validation">
         </section>
-        <h3>Emergy Contacts</h3>
+        <h3>Contacts</h3>
         <section>
           <input type="text" name="phone">
         </section>
