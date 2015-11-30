@@ -92,7 +92,7 @@
                 else {
                   $checkmark_class = 'checkmark hidden';
                 }
-                $added_by = pg_query($db, "SELECT first_name, last_name FROM users WHERE id = {$row['added_by']};");
+                $added_by = pg_query($db, "SELECT first_name, last_name FROM users WHERE id = {$row['owner_id']};");
                 $added_by_row = pg_fetch_assoc($added_by);
                 $name = "{$added_by_row['first_name']} {$added_by_row['last_name']}";
                 echo 
