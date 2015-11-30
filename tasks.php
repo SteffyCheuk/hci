@@ -12,7 +12,7 @@
         <h4 class="centered"> Add Tasks </h4>
         <form id="add_task" action="add_task" method="post">
           <input class="centered" type="text" id="add-task-title" name="title" placeholder="add task title...">
-          <textarea class="centered" id="add-task-description" name="description" placeholder="add task description...">
+          <textarea class="centered" id="add-task-description" name="description" placeholder="add task description..."></textarea>
           <input class="centered" id="add-task-location" type="text" name="location" placeholder="add a location...">
           <input class="centered" id="add-task-date" type="text" name="date" placeholder="mm/dd/yy">
           <input class="centered" id="add-task-time" type="text" name="time" placeholder="00:00">
