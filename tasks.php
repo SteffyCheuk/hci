@@ -7,31 +7,35 @@
 
   <body>
     <div id="container">
-    
-      <?php require_once "partials/DB.php"; ?>
-      <?php include "partials/header.php"; ?>
+      <div id="container-contents">
 
-      <!-- TASK HEADER -->
-      <div id="tasks">
-        TASKS
-        <img src="./images/task.png" alt="pic">
+        <?php require_once "partials/DB.php"; ?>
+        <?php include "partials/header.php"; ?>
+
+        <!-- TASK HEADER -->
+        <div id="tasks">
+          TASKS
+          <img src="./images/task.png" alt="pic">
+        </div>
+
+        <!-- DISPLAY TASKS -->
+        <?php 
+          if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // this means that an account was registered...
+
+          }
+          else if (isset($_SESSION["user"])){
+            // display tasks
+          }
+          else {
+            echo "Error";
+          }
+        ?>
+
+        <!-- DISPLAY ADD TASK BUTTON -->
+        <img id="add_task_button" src="./images/plus_sign.png">
       </div>
-
-      <?php 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-          // this means that an account was registered...
-
-        }
-        else if (isset($_SESSION["user"])){
-          // display tasks
-        }
-        else {
-          echo "Error";
-        }
-      ?>
-
       <?php include "partials/navigation.php"; ?>
-
     </div>
   </body> 
 </html> 
