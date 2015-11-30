@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], textarea {
   margin: 6px 0px 6px 0px;
 }
 
