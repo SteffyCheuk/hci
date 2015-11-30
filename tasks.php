@@ -50,10 +50,10 @@
                 $time = $_POST["time"];
                 // data checking
                 if (!isset($_POST["date"]) || strlen(trim($_POST["date"])) == 0){
-                  $date = NULL;
+                  $date = null;
                 }
                 if (!isset($_POST["time"]) || strlen(trim($_POST["time"])) == 0){
-                  $time = NULL;
+                  $time = null;
                 }
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
                                 title, description, location, 
