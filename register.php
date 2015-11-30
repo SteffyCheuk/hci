@@ -23,14 +23,32 @@
         </section>
         <h3>Details</h3>
         <section>
-          <input type="text" name="first-name">
-          <input type="text" name="last-name">
-          <input type="text" name="email">
-          <input type="password" name="password">
-          <input type="password" name="password-validation">
+          <table>
+            <tr>
+              <td>First Name:</td>
+              <td><input type="text" name="first-name"></td>
+            </tr>
+            <tr>  
+              <td>Last Name:</td>
+              <td><input type="text" name="last-name"></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+              <td>Confirm Password</td>
+              <td><input type="password" name="password-validation"></td>
+            </tr>
+          </table>
         </section>
         <h3>Contacts</h3>
         <section>
+          Phone Number: <br/>
           <input type="text" name="phone">
         </section>
       </form>
