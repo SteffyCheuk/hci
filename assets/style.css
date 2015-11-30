@@ -99,7 +99,7 @@ input[type="text"], input[type="password"] {
   margin-bottom: 8px;
 }
 
-.body {
+/*.body {
   display: block;
   height: 400px;
   width: 350px;
@@ -109,13 +109,8 @@ input[type="text"], input[type="password"] {
   display: block;
   height: 400px;
   width: 350px;
-}
+}*/
 
 .registration > .content {
   width: 98%;
-}
-
-.registration > .content legend {
-  position: absolute;
-  left: -9999em;
 }
