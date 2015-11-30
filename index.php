@@ -10,7 +10,7 @@
     session_start();
     if (!isset($_SESSION['user'])) {
       // display register and login buttons
-      include "partial/login.php"
+      include "partial/login.php";
     }
     else {
       header("Location: tasks.php");
