@@ -235,11 +235,27 @@ input[type=radio]:checked + label {
   margin: auto;
 }
 
+#add-task-title {
+  width: 100%;
+}
+
+#add-task-description {
+  width: 100%;
+}
+
+#add-task-location {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 #add-task-date {
+  float: left;
   width: 60%;
 }
 
 #add-task-time {
+  float: right;
   margin-left: 15px;
   width: 35%;
 }
