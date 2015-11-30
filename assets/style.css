@@ -110,3 +110,12 @@ input[type="text"], input[type="password"] {
   height: 400px;
   width: 350px;
 }
+
+.registration > .content {
+  width: 98%;
+}
+
+.registration > .content legend {
+  position: absolute;
+  left: -9999em;
+}
