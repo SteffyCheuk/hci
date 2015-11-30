@@ -11,11 +11,11 @@
       <div id="modal">
         <h4 class="centered"> Add Tasks </h4>
         <form id="add_task" action="add_task" method="post">
-          <input class="centered" type="text" id="add-task-title" name="title" placeholder="add task title...">
-          <textarea class="centered" id="add-task-description" name="description" placeholder="add task description..."></textarea>
-          <input class="centered" id="add-task-location" type="text" name="location" placeholder="add a location...">
-          <input class="centered" id="add-task-date" type="text" name="date" placeholder="mm/dd/yy">
-          <input class="centered" id="add-task-time" type="text" name="time" placeholder="00:00">
+          <input type="text" id="add-task-title" name="title" placeholder="add task title...">
+          <textarea id="add-task-description" name="description" placeholder="add task description..."></textarea>
+          <input id="add-task-location" type="text" name="location" placeholder="add a location...">
+          <input id="add-task-date" type="text" name="date" placeholder="mm/dd/yy">
+          <input id="add-task-time" type="text" name="time" placeholder="00:00">
           <br/>
           <input class="right" type="submit" value="Add">
         </form>
@@ -61,7 +61,12 @@
 <script>
   $(document).ready(function () {
     $("#add_task_button").click(function() {
-      console.log('clicked!');
+      $("#overlay").show();
+      $("#modal").show();
+    });
+    $("#overlay").click(function() {
+      $("#overlay").hide();
+      $("#modal").hide();
     });
   }); 
 </script>
