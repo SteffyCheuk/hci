@@ -61,7 +61,7 @@
                                 done, notified) 
                         VALUES ('{$_SESSION['user']}', '{$_SESSION['user']}', 
                                 '{$title}', '{$description}', '{$location}', 
-                                '{$date}', '{$time}', false, false);";
+                                {$date}, {$time}, false, false);";
                 $result = pg_query($db, $sql);
               }
             }
