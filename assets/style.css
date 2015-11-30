@@ -330,32 +330,22 @@ input[type=radio]:checked + label {
 /* DROPDOWNWRAPPER - credited to rakibtg */
 .dropdownWrapper {
   display: inline-block;
-  border: 1px solid #DA4453;
-  background-color: #FC6D58;
-  padding: 0px;
   position: relative;
-  border-radius: 3px;
-  text-align: center;
 }
 
-.dropdownWrapper:hover { background-color: #E95546; }
-
-.dropdownLabel {
-  cursor: pointer;
-  padding: 5px 20px;
-}
+.dropdownWrapper:hover { background-color: #00416A; }
 
 .dropdownPanel {
   position: absolute;
   min-width: 120px;
-  background-color: #ED5565;
+  background-color: #00416A;
   padding: 5px;
   left: 0;
   top: 0;
   margin-top: 35px;
   display: none;
   z-index: 2;
-  border: 1px solid #C0392B;
+  border: 1px solid #00416A;
 }
 
 .dropdownPanel:before {
@@ -365,7 +355,6 @@ input[type=radio]:checked + label {
   border-style: solid;
   border-width: 0 7px 8px 7px;
   border-color: transparent transparent #C0392B transparent;
-  text-align: center;
   top: 0;
   left: 0;
   margin-top: -8px;
