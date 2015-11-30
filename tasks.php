@@ -125,12 +125,12 @@
     $(".task-trash").click(function () {
       var id = $(this).text();
       $("#overlay").show();
-      $("#modal-trash").append("
-        <form name='task-deletion' method='post' action='task.php'>
-          <input type='hidden' value='" + id + "'> 
-          <input type='submit' name='delete-form' value='Yes'>
-          <input type='button' id='delete-cancel' name='cancel' value='No'>
-        </form>
+      $("#modal-trash").append(" \
+        <form name='task-deletion' method='post' action='task.php'> \
+          <input type='hidden' value='" + id + "'>  \
+          <input type='submit' name='delete-form' value='Yes'> \
+          <input type='button' id='delete-cancel' name='cancel' value='No'> \
+        </form> \
         ");
       $("#modal-trash").show();
     });
