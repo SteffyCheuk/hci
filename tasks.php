@@ -70,7 +70,7 @@
               }
               echo "</table>";
             }
-
+          }
           else {
             echo "Error";
           }
