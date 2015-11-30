@@ -55,6 +55,12 @@ a.navigation-link:hover {
   background-color: #95B5D8;
 }
 
+#form {
+  width: 250px;
+  height: 400px;
+  margin: auto;
+}
+
 #login {
   color: white;
   font-size: 30px;

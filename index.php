@@ -19,7 +19,6 @@
           header("Location: tasks.php");
         }
       ?>
-      <?php include "partials/navigation.php"; ?>
 
     </div>
   </body>
