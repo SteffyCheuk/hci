@@ -38,6 +38,7 @@
         <!-- DISPLAY TASKS -->
         <?php 
           session_start();
+          $_SESSION['user'] = 1;
           if (isset($_SESSION['user'])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               // this means that an account was registered... or that a task was added. 
@@ -66,7 +67,7 @@
                 echo 
                   "<tr> 
                     <td><img src='./images/white_check_box.png'></td>
-                    <td>$row[$i]['title']</td>
+                    <td>$row['title']</td>
                     <td><img src='./images/trash.png'></td>
                   </tr> 
                   "; 
