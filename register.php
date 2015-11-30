@@ -23,7 +23,7 @@
         </section>
         <h3>Details</h3>
         <section>
-          <table id="registration-table">
+          <table class="white">
             <tr>
               <td>First Name:</td>
               <td><input type="text" name="first-name"></td>

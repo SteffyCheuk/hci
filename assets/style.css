@@ -110,10 +110,6 @@ input[type="text"], input[type="password"] {
   width: 350px;
 }*/
 
-#registration-table {
-  color: #E8E8E8;
-}
-
 .wizard {
   background-color: transparent;
 }
@@ -144,4 +140,8 @@ input[type="radio"] + label {
 input[type=radio]:checked + label { 
   background-image: none;
   background-color:#d0d0d0;
+}
+
+.white {
+  color: #E8E8E8;
 }
