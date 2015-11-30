@@ -333,19 +333,19 @@ input[type=radio]:checked + label {
   position: relative;
 }
 
-.dropdownWrapper:hover { background-color: #00416A; }
+.dropdownWrapper:hover { background-color: #3D59AB; }
 
 .dropdownPanel {
   position: absolute;
   min-width: 120px;
-  background-color: #00416A;
+  background-color: #3D59AB;
   padding: 5px;
   left: 0;
   top: 0;
   margin-top: 35px;
   display: none;
   z-index: 2;
-  border: 1px solid #00416A;
+  border: 1px solid #3D59AB;
 }
 
 .dropdownPanel:before {
@@ -354,7 +354,7 @@ input[type=radio]:checked + label {
   height: 0;
   border-style: solid;
   border-width: 0 7px 8px 7px;
-  border-color: transparent transparent #C0392B transparent;
+  border-color: transparent transparent #3D59AB transparent;
   top: 0;
   left: 0;
   margin-top: -8px;

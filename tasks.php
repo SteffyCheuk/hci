@@ -192,17 +192,19 @@
         data: {id: id, checked: checked}
       });
     });
+
+    // DROP DOWN WINDOWS
     var $dropdown = $('.dropdownWrapper'),
         $drpBtn   = $dropdown.find('div.dropdownLabel');
 
     $drpBtn.on('click', function(e){
       e.stopPropagation();
       var $element = $(this).parent();
-      $element.find('.dropdownPanel').fadeToggle(200);
+      $element.find('.dropdownPanel').fadeToggle(100);
     });
 
     $("body").click(function(){
-      $('.dropdownPanel').hide(200);
+      $('.dropdownPanel').hide(100);
     });
   }); 
 </script>
