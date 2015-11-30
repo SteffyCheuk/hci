@@ -5,10 +5,16 @@
     <link rel="stylesheet" href="./assets/style.css">
   </head>
 
-  <?php require_once "partials/DB.php"; ?>
+  <body>
+    <div id="container">
+    
+      <?php require_once "partials/DB.php"; ?>
 
-  <!-- MAIN CONTENT GOES HERE -->
+      <!-- MAIN CONTENT GOES HERE -->
 
-  <?php include "partials/navigation.php"; ?>
+      <?php include "partials/navigation.php"; ?>
+
+    </div>
+  </body> 
 </html> 
 
