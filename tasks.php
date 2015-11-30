@@ -49,10 +49,10 @@
                 $date = $_POST["date"];
                 $time = $_POST["time"];
                 // data checking
-                if (trim($date) == ''){
+                if (!isset($_POST["date"]) || strlen(trim($_POST["date"])) == 0){
                   $date = NULL;
                 }
-                if (trim($time) == ''){
+                if (!isset($_POST["time"]) || strlen(trim($_POST["time"])) == 0){
                   $time = NULL;
                 }
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
