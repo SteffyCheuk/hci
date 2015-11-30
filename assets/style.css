@@ -54,3 +54,10 @@ a.navigation-link {
 a.navigation-link:hover {
   background-color: #95B5D8;
 }
+
+#register-button {
+  height: 150px;
+  width: 300px;
+  background-color: #C7E1FE;
+  color: #1D2029;
+}
