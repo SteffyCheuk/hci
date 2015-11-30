@@ -27,7 +27,8 @@
             }
             else {
               $password = password_hash($password, PASSWORD_BCRYPT);
-              $sql = "INSERT INTO users VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
+              $sql = "INSERT INTO users (first_name, last_name, type, email, password, phone)
+                      VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
               $result = pg_query($db, $sql);
               if ($result){
                 echo "<h2>Welcome {$first_name} {$last_name}!</h2>";
