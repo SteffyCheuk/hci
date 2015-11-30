@@ -35,7 +35,7 @@
                 echo "<h2>Let's get started.</h2>";
                 echo "<a href='tasks.php'>Go to Tasks</a>";
               }
-              $result = pg_query($db, "SELECT id FROM users WHERE email = {$email};")
+              $result = pg_query($db, "SELECT id FROM users WHERE email = {$email};");
               $_SESSION['user'] = $result[0]; 
             }
           }
