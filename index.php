@@ -29,10 +29,10 @@ if (!$db) {
     <div id="container">
       <div id="navigation">
         <ul id="navigation-list">
-          <a><li class="navigation-link">TASKS</li></a>
-          <a><li class="navigation-link">MAP</li></a>
-          <a><li class="navigation-link">CAREGIVEr</li></a>
-          <a><li class="navigation-link">SETTINGS</li></a>
+          <a class="navigation-link"><li class="navigation-list-item">TASKS</li></a>
+          <a class="navigation-link"><li class="navigation-list-item">MAP</li></a>
+          <a class="navigation-link"><li class="navigation-list-item">CAREGIVER</li></a>
+          <a class="navigation-link"><li class="navigation-list-item">SETTINGS</li></a>
         </ul>
       </div>
     </div>

@@ -12,7 +12,7 @@ html, body {
   transform: translateX(-50%) translateY(-50%);
   width: 400px;
   height: 600px;
-  background-color: #00416A;
+  background-color: #1D2029;
 }
 
 
@@ -29,11 +29,22 @@ html, body {
   list-style-type: none;
 }
 
+.navigation-list-item {
+  position: relative;
+  float: left;
+}
 
-.navigation-link {
+a.navigation-link {
+  display: block;
   position: relative;
   float: left;
   width: 198px;
   height: 73px;
   border: 1px white solid;
+  color: #1D2029;
+  background-color: #C7E1FE;
+}
+
+a.navigation-link:hover {
+  background-color: #95B5D8;
 }
