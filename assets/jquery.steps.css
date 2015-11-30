@@ -148,7 +148,7 @@
 
 .wizard > .content
 {
-    background: #eee;
+    background: transparent;
     display: block;
     overflow: hidden;
     position: relative;
