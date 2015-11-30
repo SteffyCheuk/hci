@@ -132,7 +132,7 @@ input[type="radio"] {
 input[type="radio"] + label {
   display:block;
   height: 100px;
-  width: 300px;
+  width: 320px;
   margin: 20px;
   margin-top: 20px;
   background-color: #e7e7e7;
