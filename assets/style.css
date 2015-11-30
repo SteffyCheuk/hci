@@ -43,7 +43,7 @@ html, body {
 .navigation-list-item {
   position: absolute;
   height: 73px;
-  width: 49.5%;
+  width: 197px;
   text-align: center;
   line-height: 73px;
   font-size: 16px;
@@ -204,3 +204,21 @@ input[type=radio]:checked + label {
   padding: 20px;
 }
 
+#overlay {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background-color: #121212;
+  opacity: 0.7;
+  z-index: 1
+}
+
+#modal {
+  position:absolute;
+  width: 360px;
+  height: 200px;
+  margin: auto;
+  margin-top: 150px;
+  z-index: 2;
+  background-color: #BEBEBE;
+}

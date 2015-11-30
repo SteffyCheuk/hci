@@ -3,6 +3,7 @@
   <head>
     <title>M.A.P. - Memos and Protection </title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.js"></script>
   </head>
 
   <body>
@@ -34,9 +35,22 @@
 
         <!-- DISPLAY ADD TASK BUTTON -->
         <img id="add_task_button" src="./images/plus_sign.png">
+        <div id="model">
+        </div>
+        <div id="overlay">
+        </div>
+
       </div>
       <?php include "partials/navigation.php"; ?>
     </div>
   </body> 
 </html> 
 
+
+<script>
+  $(document).ready(function () {
+    $("#add_task_button").click(function() {
+      console.log('clicked!');
+    });
+  }); 
+</script>
