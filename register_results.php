@@ -26,8 +26,7 @@
               echo "Passwords do not match!  Please try again.";
             }
             else {
-              $options = [ 'cost' => 2, 'salt' => 'catscatscats' ];
-              $password = password_hash($password, PASSWORD_BCRYPT, $options);
+              $password = password_hash($password, PASSWORD_BCRYPT);
               $sql = "INSERT INTO users VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
               $result = pg_query($db, $sql);
               if ($result){
