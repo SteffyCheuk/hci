@@ -164,8 +164,8 @@
       $("#modal-trash").append(" \
         <form name='task-deletion' method='post' action='tasks.php'> \
           <input type='hidden' name='id' value='" + id + "'>  \
-          <input type='submit' name='delete-form' value='Yes'> \
-          <input type='button' id='delete-cancel' name='cancel' value='No'> \
+          <input class='btn' type='submit' name='delete-form' value='Yes'> \
+          <input class='btn' type='button' id='delete-cancel' name='cancel' value='No'> \
         </form> \
         ");
       $("#modal-trash").show();
