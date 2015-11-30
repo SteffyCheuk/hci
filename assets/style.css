@@ -59,7 +59,8 @@ a.navigation-link:hover {
   width: 250px;
   height: 400px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 75px;
+  font-size: 50px;
 }
 
 #login {
