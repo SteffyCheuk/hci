@@ -53,6 +53,7 @@
               <td>Confirm Password</td>
               <td><input type="password" name="password-validation"></td>
             </tr>
+          </table>
         </section>
       </form>
       <?php 
