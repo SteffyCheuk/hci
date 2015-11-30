@@ -40,8 +40,7 @@ html, body {
 }
 
 .navigation-list-item {
-  position: fixed;
-  display: inline-block;
+  position: absolute;
   height: 73px;
   width: 198px;
   text-align: center;
