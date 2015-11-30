@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>M.A.P. - Memos and Protection </title>
+    <link rel="stylesheet" href="./assets/jquery.steps.css">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/jquery.js"></script>
     <script src="./assets/jquery.steps.min.js"></script>
