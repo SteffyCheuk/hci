@@ -95,7 +95,7 @@
                 $added_by = pg_query($db, "SELECT first_name, last_name FROM users WHERE id = {$row['owner_id']};");
                 $added_by_row = pg_fetch_assoc($added_by);
                 $name = "{$added_by_row['first_name']} {$added_by_row['last_name']}";
-                if ($row['date'] == null || $row['time'] == null) {
+                if (!isset($row['date']) || !isset($row['time'])) {
                   $datetime = "";
                 }
                 else {
