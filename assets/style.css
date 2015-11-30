@@ -112,7 +112,7 @@ input[type="text"], input[type="password"] {
 }*/
 
 .wizard {
-  background-color: none;
+  background-color: transparent;
 }
 
 .wizard > .content {
