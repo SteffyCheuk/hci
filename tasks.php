@@ -99,7 +99,7 @@
                   $datetime = "";
                 }
                 else {
-                  $datetime = "{$row['date']} {$row['time']}<br/>";
+                  $datetime = "<img src='./images/clock_task.png'> {$row['date']} {$row['time']}<br/>";
                 }
                 echo 
                   "<tr> 
@@ -114,10 +114,12 @@
                         <img id='arrow' src='./images/down_arrow_task.png' class='right'>
                       </div>
                       <div class='dropdownPanel'>
-                        {$row['description']}<br/>
-                        {$row['location']}<br/>
-                        $datetime
-                        Added by: {$name}<br/>
+                        <div class='content-padding'>
+                          Description: {$row['description']}<br/>
+                          <img src='./images/task_location_icon.png'> {$row['location']}<br/>
+                          $datetime
+                          Added by: {$name}<br/>
+                        </div>
                       </div>
                     </td>
                     <td class='task-trash'><img src='./images/trash.png'>
