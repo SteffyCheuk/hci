@@ -27,7 +27,8 @@ html, body {
 }
 
 #navigation {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 400px;
   height: 150px;
 }
@@ -39,12 +40,32 @@ html, body {
 }
 
 .navigation-list-item {
+  position: absolute;
   height: 73px;
   width: 198px;
-  float: left;
   text-align: center;
   line-height: 73px;
   font-size: 16px;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
 }
 
 a.navigation-link {
