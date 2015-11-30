@@ -12,7 +12,7 @@
       <?php include "partials/header.php"; ?>
 
       <!-- TASK HEADER -->
-      <div id="Tasks">
+      <div id="tasks">
         TASKS
         <img src="./images/task.png" alt="pic">
       </div>
