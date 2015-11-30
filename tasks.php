@@ -14,7 +14,7 @@
       <!-- TASK HEADER -->
       <div id="Tasks">
         TASKS
-        <img src="./assets/task.png" alt="pic">
+        <img src="./images/task.png" alt="pic">
       </div>
 
       <?php 

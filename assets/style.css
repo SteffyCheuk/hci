@@ -152,10 +152,17 @@ input[type=radio]:checked + label {
   display: block;
 }
 
+#tasks {
+  color: #BEBEBE;
+  font-size: 36px;
+}
+
 .left {
+  padding: 8px;
   float: left;
 }
 
 .right {
+  padding: 8px;
   float: right;
 }
