@@ -76,6 +76,7 @@
             }
           }
           else {
+            echo $_SESSION["user"];
             echo "Error";
           }
         ?>
