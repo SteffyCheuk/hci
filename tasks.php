@@ -17,7 +17,7 @@
           <input class="centered" id="add-task-date" type="text" name="date" placeholder="mm/dd/yy">
           <input class="centered" id="add-task-time" type="text" name="time" placeholder="00:00">
           <br/>
-          <input class="left" type="submit" value="Add">
+          <input class="right" type="submit" value="Add">
         </form>
       </div>
       <div id="overlay">
