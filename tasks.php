@@ -133,12 +133,12 @@
         </form>
         ");
       $("#modal-trash").show();
-    })
+    });
     $("#delete-cancel").click(function () {
       $("#overlay").hide();
       $("#modal").hide();
       $("#modal-trash").html("<h4> Delete Task? </h4>");
       $("#modal-trash").hide();
-    })
+    });
   }); 
 </script>
