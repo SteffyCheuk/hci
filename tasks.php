@@ -48,7 +48,7 @@
               // DELETED TASK
               if (isset($_POST["id"])) {
                 $id = $_POST["id"];
-                $sql = "DELETE FROM tasks WHERE id = {$id};"
+                $sql = "DELETE FROM tasks WHERE id = {$id};";
                 $result = pg_query($db, $sql);
               }
               // ADDED TASK
