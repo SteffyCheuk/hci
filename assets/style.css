@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"] {
+#registration > input[type="text"], #registration > input[type="password"] {
   margin: 0;
   padding: 4px;
   width: 240px;
@@ -215,9 +215,9 @@ input[type=radio]:checked + label {
 
 #modal {
   position:absolute;
-  width: 360px;
+  width: 340px;
   height: 200px;
-  margin: auto;
+  margin: 30px;
   margin-top: 150px;
   z-index: 2;
   background-color: #BEBEBE;
