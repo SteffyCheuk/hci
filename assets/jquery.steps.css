@@ -150,10 +150,10 @@
 {
     background: #eee;
     display: block;
-    margin: 0.5em;
     overflow: hidden;
     position: relative;
-    width: auto;
+    width: 360px;
+    padding: 20px;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -164,7 +164,6 @@
 {
     display: inline;
     float: left;
-    margin: 0 2.5% 0.5em 2.5%;
     width: 65%;
 }
 
