@@ -172,9 +172,9 @@
 {
     float: left;
     position: absolute;
-    width: 400px;
-    height: 400px;
-    padding: 2.5%;
+    width: 360px;
+    height: 360px;
+    padding: 20px;
 }
 
 .wizard > .content > .body ul
