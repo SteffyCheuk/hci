@@ -74,7 +74,7 @@
 .wizard > .steps > ul > li
 {
     width: 33%;
-    height: 100px;
+    height: 80px;
 }
 
 .wizard > .steps > ul > li,
@@ -298,7 +298,7 @@
 .tabcontrol > .steps > ul
 {
     position: relative;
-    margin: 6px 0 0 0;
+    margin: auto;
     top: 1px;
     z-index: 1;
 }
@@ -306,7 +306,7 @@
 .tabcontrol > .steps > ul > li
 {
     float: left;
-    margin: 5px 2px 0 0;
+    /*margin: 5px 2px 0 0;*/
     padding: 1px;
     height: ;
 
