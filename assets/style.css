@@ -233,3 +233,12 @@ input[type=radio]:checked + label {
   text-align: center;
   margin: auto;
 }
+
+#add-task-date {
+  width: 60%;
+}
+
+#add-task-time {
+  margin-left: 15px;
+  width: 35%;
+}
