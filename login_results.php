@@ -16,8 +16,8 @@
           session_start();
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = trim($_POST["email"]);
-            $password = $_POST["password"];
-            
+            $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
+        
             $sql = "SELECT * FROM users WHERE email = '{$email}';";
             $result = pg_query($db, $sql);
 
