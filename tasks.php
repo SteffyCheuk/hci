@@ -192,7 +192,7 @@
         data: {id: id, checked: checked}
       });
     });
-    var $dropdown = $('div.dropdownWrapper'),
+    var $dropdown = $('.dropdownWrapper'),
         $drpBtn   = $dropdown.find('div.dropdownLabel');
 
     $drpBtn.on('click', function(e){
