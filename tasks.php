@@ -95,6 +95,12 @@
                 $added_by = pg_query($db, "SELECT first_name, last_name FROM users WHERE id = {$row['owner_id']};");
                 $added_by_row = pg_fetch_assoc($added_by);
                 $name = "{$added_by_row['first_name']} {$added_by_row['last_name']}";
+                if ($row['date'] == null or $row['time'] == null) {
+                  $datetime = "";
+                }
+                else {
+                  $datetime = "{$row['date']} {$row['time']}<br/>";
+                }
                 echo 
                   "<tr> 
                     <td class='task-status'>
@@ -102,18 +108,16 @@
                       <img class='checkbox' src='./images/white_check_box.png'>
                       <img class='{$checkmark_class}' src='./images/check.png'>
                     </td>
-                    <td class='task-details'>
-                      <div class='dropdownWrapper'>
-                        <div class='dropdownLabel'>
-                          {$row['title']}
-                          <img src='./images/down_arrow_task.png' class='right'>
-                        </div>
-                        <div class='dropdownPanel'>
-                          {$row['description']}<br/>
-                          {$row['location']}<br/>
-                          {$row['date']} {$row['time']}<br/>
-                          Added by: {$name}<br/>
-                        </div>
+                    <td class='task-details dropdownWrapper'>
+                      <div class='dropdownLabel'>
+                        {$row['title']}
+                        <img src='./images/down_arrow_task.png' class='right'>
+                      </div>
+                      <div class='dropdownPanel'>
+                        {$row['description']}<br/>
+                        {$row['location']}<br/>
+                        $datetime
+                        Added by: {$name}<br/>
                       </div>
                     </td>
                     <td class='task-trash'><img src='./images/trash.png'>
