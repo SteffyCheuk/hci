@@ -111,7 +111,7 @@
                     <td class='task-details dropdownWrapper'>
                       <div class='dropdownLabel'>
                         {$row['title']}
-                        <img src='./images/down_arrow_task.png' class='right'>
+                        <img id='arrow' src='./images/down_arrow_task.png' class='right'>
                       </div>
                       <div class='dropdownPanel'>
                         {$row['description']}<br/>
@@ -201,10 +201,12 @@
       e.stopPropagation();
       var $element = $(this).parent();
       $element.find('.dropdownPanel').fadeToggle(100);
+      $("#arrow").attr("src","./images/up_arrow_task.png");
     });
 
     $("body").click(function(){
       $('.dropdownPanel').hide(100);
+      $("#arrow").attr("src","./images/down_arrow_task.png");
     });
   }); 
 </script>
