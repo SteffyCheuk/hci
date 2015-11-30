@@ -37,13 +37,40 @@
 
         <!-- DISPLAY TASKS -->
         <?php 
-          if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            // this means that an account was registered...
-
-          }
-          else if (isset($_SESSION["user"])){
+          if (isset($_SESSION["user"])){
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+              // this means that an account was registered... or that a task was added. 
+              if (isset($_POST["title"]) {
+                $title = $_POST["title"];
+                $description = $_POST["description"];
+                $location = $_POST["location"];
+                $date = $_POST["date"];
+                $time = $_POST["time"];
+                $sql = "INSERT INTO tasks VALUES ($_SESSION['user'], $_SESSION['user'], $title, $description, $location, $date, $time, false, false);";
+                $result = pg_query($db, $sql);
+              }
+            }
             // display tasks
-          }
+            $sql = "SELECT * FROM tasks WHERE older_adult_id = $_SESSION['user'];"
+            $result = pg_query($db, $sql);
+            if (!$result) {
+              echo "Error!";
+            }
+            else {
+              $arr = pg_fetch_all($result, 0, PGSQL_NUM);
+              echo "<table>";
+              for ($i = 0; $i < count($arr), $i++) {
+                echo 
+                  "<tr> 
+                    <td><img src='./images/white_check_box.png'></td>
+                    <td>$arr[$i]['title']</td>
+                    <td><img src='./images/trash.png'></td>
+                  </tr> 
+                  "; 
+              }
+              echo "</table>";
+            }
+
           else {
             echo "Error";
           }
