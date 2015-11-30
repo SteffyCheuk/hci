@@ -73,13 +73,13 @@
             $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
             if ($result) {
-              echo "<table>";
+              echo "<table id='task-table'>";
               while ($row = pg_fetch_assoc($result)) {
                 echo 
                   "<tr> 
-                    <td><img src='./images/white_check_box.png'></td>
-                    <td>{$row['title']}</td>
-                    <td><img src='./images/trash.png'></td>
+                    <td class='task-status'><img src='./images/white_check_box.png'></td>
+                    <td class='task-details'>{$row['title']}</td>
+                    <td class='task-trash'><img src='./images/trash.png'></td>
                   </tr> 
                   "; 
               }
