@@ -85,3 +85,7 @@ h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
+
+input[type="text"] {
+  width: 100%;
+}
