@@ -1,3 +1,4 @@
+
 html, body {
   padding: 0;
   margin: 0;
@@ -95,6 +96,32 @@ input[type="text"], input[type="password"] {
   height: 30px;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+/*.body {
+  display: block;
+  height: 400px;
+  width: 350px;
+}
+
+.content {
+  display: block;
+  height: 400px;
+  width: 350px;
+}*/
+
+.wizard {
+  background-color: transparent;
+}
+
+.wizard > .content {
+  background-color: transparent;
+  width: 98%;
+  height: 300px;
+}
+
+.wizard > .steps li.disabled, .wizard > .steps li.current {
+  width: 120px;
 }
 
 input[type="radio"] {
