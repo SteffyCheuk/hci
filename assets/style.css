@@ -292,6 +292,7 @@ input[type=radio]:checked + label {
 }
 
 .task-trash {
-  width: 50px;
+  margin-left: 20px;
+  width: 30px;
   padding: 5px;
 }
