@@ -318,10 +318,6 @@ input[type=radio]:checked + label {
   cursor: pointer;
 }
 
-input {
-  cursor: pointer;
-}
-
 .hidden {
   display: none;
 }
