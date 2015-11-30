@@ -89,6 +89,7 @@
                 echo 
                   "<tr> 
                     <td class='task-status'>
+                      <span class='hidden'>{$row['id']}</span>
                       <img class='checkbox' src='./images/white_check_box.png'>
                       <img class='checkmark hidden' src='./images/check.png'>
                     </td>
@@ -150,13 +151,22 @@
       });
     });
     $(".task-status").click(function () {
+      var id = $(this).text();
       var checkmark = $(this).find(".checkmark");
+      var checked = false;
       if (checkmark.hasClass("hidden")) {
         checkmark.removeClass("hidden");
+        checked = true;
       }
       else {
         checkmark.addClass("hidden");
+        checked = false;
       }
+      $.ajax({
+        type: "POST",
+        url: "partials/task_completed.php",
+        data: {id: id, checked: checked}
+      });
     })
   }); 
 </script>

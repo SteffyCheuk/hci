@@ -324,4 +324,5 @@ input[type=radio]:checked + label {
 
 .checkmark {
   position: absolute;
+  margin-left: -20px;
 }
