@@ -41,11 +41,13 @@ html, body {
 
 .navigation-list-item {
   position: absolute;
+  display: inline-block;
   height: 73px;
   width: 198px;
   text-align: center;
   line-height: 73px;
   font-size: 16px;
+  overflow: hidden;
 }
 
 .top-right {
