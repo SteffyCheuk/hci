@@ -3,7 +3,7 @@
 
   $setup_users = "
     CREATE TABLE users (
-      id              INT         PRIMARY KEY,
+      id              SERIAL      PRIMARY KEY,
       first_name      TEXT,
       last_name       TEXT,
       type            CHAR(20),
