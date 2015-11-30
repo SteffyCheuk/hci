@@ -1,8 +1,9 @@
 <?php
   require_once "DB.php";
-
+    
   if (isset($_POST["id"])){
-    $done = $_POST["checked"];
+    $id = $_POST["id"]
+    $done = $_POST["checked"]; 
     $sql = "UPDATE tasks SET done = {$done} WHERE id = {$id};";
     $result = pg_query($db, $sql);
     if (!$result){
