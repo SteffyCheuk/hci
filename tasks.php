@@ -38,7 +38,7 @@
         <!-- DISPLAY TASKS -->
         <?php 
           session_start();
-          if (isset($_SESSION["user"])){
+          if (isset($_SESSION['user'])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               // this means that an account was registered... or that a task was added. 
               if (isset($_POST["title"])) {
@@ -62,8 +62,9 @@
             $result = pg_query($db, $sql);
             if ($result) {
               $arr = pg_fetch_all($result);
+              echo $arr;
               echo "<table>";
-              for ($i = 0; $i < count($arr); $i++) {
+              for ($i = 0; $i < count($arr); ++$i) {
                 echo 
                   "<tr> 
                     <td><img src='./images/white_check_box.png'></td>
