@@ -232,7 +232,7 @@ input[type=radio]:checked + label {
   width: 180px;
   height: 130px;
   margin: 100px;
-  margin-top: 160px;
+  margin-top: 180px;
   z-index: 2;
   background-color: #C7E1FE;
   border-radius: 10px;
