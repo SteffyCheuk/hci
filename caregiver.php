@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="./assets/style.css">
   </head>
 
-  <?php require_once "partial/DB.php"; ?>
+  <?php require_once "partials/DB.php"; ?>
 
   <!-- MAIN CONTENT GOES HERE -->
 
-  <?php include "partial/navigation.php"; ?>
+  <?php include "partials/navigation.php"; ?>
 </html> 
 
