@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
+  color: #212121;
 }
 
 #container {
@@ -31,10 +32,12 @@ html, body {
 }
 
 .navigation-list-item {
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   height: 73px;
   width: 198px;
-  position: relative;
   float: left;
   text-align: center;
   vertical-align: middle;
@@ -46,7 +49,7 @@ a.navigation-link {
   float: left;
   width: 198px;
   height: 73px;
-  border: 1px white solid;
+  border: 1px #6E6E6E solid;
   color: #1D2029;
   background-color: #C7E1FE;
   text-align: center;
