@@ -60,7 +60,6 @@ a.navigation-link:hover {
   height: 400px;
   margin: auto;
   margin-top: 75px;
-  font-size: 50px;
 }
 
 #login {
@@ -77,4 +76,10 @@ a.navigation-link:hover {
   background-color: #C7E1FE;
   color: #1D2029;
   border: 1px #1D2029 solid;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: auto;
 }

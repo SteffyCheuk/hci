@@ -1,5 +1,5 @@
 <div id="form">
-  M.A.P.
+  <h2> M.A.P. </h2>
   <form id="login" name="login" method="post" action="tasks.php">
     Email: <br/>
     <input id="email" type="text"> 
