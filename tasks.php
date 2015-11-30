@@ -86,12 +86,18 @@
             if ($result) {
               echo "<table id='task-table' class='white'>";
               while ($row = pg_fetch_assoc($result)) {
+                if ($row["done"]) {
+                  $checkmark_class = 'checkmark';
+                }
+                else {
+                  $checkmark_class = 'checkmark hidden';
+                }
                 echo 
                   "<tr> 
                     <td class='task-status'>
                       <span class='hidden'>{$row['id']}</span>
                       <img class='checkbox' src='./images/white_check_box.png'>
-                      <img class='checkmark hidden' src='./images/check.png'>
+                      <img class='{$checkmark_class}' src='./images/check.png'>
                     </td>
                     <td class='task-details'>{$row['title']}
                       <img src='./images/down_arrow_task.png' class='right'>
