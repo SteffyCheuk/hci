@@ -48,13 +48,13 @@
                 $location = $_POST["location"];
                 // data checking
                 if (!isset($_POST["date"]) || strlen(trim($_POST["date"]) == 0)){
-                  $date = NULL;
+                  $date = null;
                 }
                 else {
                   $date = "{$_POST['date']}";
                 }
                 if (!isset($_POST["time"]) || strlen(trim($_POST["time"])) == 0){
-                  $time = NULL;
+                  $time = null;
                 }
                 else {
                   $time = "{$_POST['time']}";
