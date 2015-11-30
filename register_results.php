@@ -31,13 +31,16 @@
                       VALUES ('{$first_name}', '{$last_name}', '{$type}', '{$email}', '{$password}', '{$phone}');";
               $result = pg_query($db, $sql);
               if ($result){
-                echo "<h2>Welcome {$first_name} {$last_name}!</h2>";
-                echo "<h2>Let's get started.</h2>";
+                echo "<h4>Welcome {$first_name} {$last_name}!</h4>";
+                echo "<h4>Let's get started.</h4>";
                 echo "<a href='tasks.php'>Go to Tasks</a>";
               }
               $result = pg_query($db, "SELECT id FROM users WHERE email = '{$email}';");
               $_SESSION['user'] = $result[0]; 
             }
+          }
+          else {
+            echo "No post!";
           }
         ?>
 
