@@ -92,6 +92,9 @@
                 else {
                   $checkmark_class = 'checkmark hidden';
                 }
+                $added_by = pg_query($db, "SELECT first_name, last_name FROM users WHERE id = {$row['added_by'];");
+                $added_by_row = pg_fetch_assoc($added_by);
+                $name = "{$added_by_row['first_name']} {$added_by_row['last_name']}";
                 echo 
                   "<tr> 
                     <td class='task-status'>
@@ -99,8 +102,19 @@
                       <img class='checkbox' src='./images/white_check_box.png'>
                       <img class='{$checkmark_class}' src='./images/check.png'>
                     </td>
-                    <td class='task-details'>{$row['title']}
-                      <img src='./images/down_arrow_task.png' class='right'>
+                    <td class='task-details'>
+                      <div class='dropdownWrapper'>
+                        <div class='dropdownLabel'>
+                          {$row['title']}
+                          <img src='./images/down_arrow_task.png' class='right'>
+                        </div>
+                        <div class='dropdownPanel'>
+                          {$row['description']}<br/>
+                          {$row['location']}<br/>
+                          {$row['date']} {$row['time']}<br/>
+                          Added by: {$name}<br/>
+                        </div>
+                      </div>
                     </td>
                     <td class='task-trash'><img src='./images/trash.png'>
                       <span class='hidden'>{$row['id']}</span>
@@ -173,6 +187,18 @@
         url: "partials/task_completed.php",
         data: {id: id, checked: checked}
       });
-    })
+    });
+    var $dropdown = $('div.dropdownWrapper'),
+        $drpBtn   = $dropdown.find('div.dropdownLabel');
+
+    $drpBtn.on('click', function(e){
+      e.stopPropagation();
+      var $element = $(this).parent();
+      $element.find('.dropdownPanel').fadeToggle(200);
+    });
+
+    $("body").click(function(){
+      $('.dropdownPanel').hide(200);
+    });
   }); 
 </script>
