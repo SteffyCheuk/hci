@@ -51,7 +51,7 @@
               }
             }
             // display tasks
-            $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};"
+            $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
             if (!$result) {
               echo "Error!";
