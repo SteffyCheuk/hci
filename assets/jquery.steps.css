@@ -74,6 +74,7 @@
 .wizard > .steps > ul > li
 {
     width: 33%;
+    height: 100px;
 }
 
 .wizard > .steps > ul > li,
@@ -164,7 +165,7 @@
     float: left;
     position: absolute;
     width: 400px;
-    height: 350px;
+    height: 400px;
     padding: 2.5%;
 }
 
@@ -176,13 +177,14 @@
 .wizard > .content > .body ul > li
 {
     display: list-item;
+    margin-top: 5px;
 }
 
 .wizard > .content > .body > iframe
 {
     border: 0 none;
     width: 300px;
-    height: 350px;
+    height: 400px;
 }
 
 .wizard > .content > .body input
@@ -364,7 +366,7 @@
     float: left;
     position: absolute;
     width: 95%;
-    height: 300px;
+    height: 350px;
     padding: 2.5%;
 }
 
