@@ -8,6 +8,12 @@
 
   <body>
     <div id="container">
+      <div id="model">
+      </div>
+      <div id="overlay">
+      </div>
+
+
       <div id="container-contents">
 
         <?php require_once "partials/DB.php"; ?>
@@ -35,11 +41,6 @@
 
         <!-- DISPLAY ADD TASK BUTTON -->
         <img id="add_task_button" src="./images/plus_sign.png">
-        <div id="model">
-        </div>
-        <div id="overlay">
-        </div>
-
       </div>
       <?php include "partials/navigation.php"; ?>
     </div>
