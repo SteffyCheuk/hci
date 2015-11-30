@@ -59,6 +59,10 @@
                 else {
                   $time = "{$_POST['time']}";
                 }
+
+                $date = null;
+                $time = null;
+
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
                                 title, description, location, 
                                 deadline_date, deadline_time,
