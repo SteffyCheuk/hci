@@ -6,10 +6,10 @@
     Password: <br/>
     <input id="password" type="password">
     <br/>
-    <input class="button" type="submit" value="submit">
+    <input class="button" type="submit" value="LOG IN">
   </form>
 
   <form id="register" name="register" action="register.php">
-    <input class="button" type="submit" value="register">
+    <input class="button" type="submit" value="REGISTER">
   </form>
 </div>

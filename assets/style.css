@@ -59,6 +59,7 @@ a.navigation-link:hover {
   width: 250px;
   height: 400px;
   margin: auto;
+  margin-top: 150px;
 }
 
 #login {
@@ -69,6 +70,7 @@ a.navigation-link:hover {
 .button {
   display: block;
   margin: auto;
+  margin-top: 25px;
   height: 73px;
   width: 250px;
   background-color: #C7E1FE;
