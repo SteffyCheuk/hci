@@ -46,14 +46,14 @@
                 $title = $_POST["title"];
                 $description = $_POST["description"];
                 $location = $_POST["location"];
-                $date = $_POST["date"];
-                $time = $_POST["time"];
+                $date = '{$_POST["date"]}';
+                $time = '{$_POST["time"]}';
                 // data checking
                 if (!isset($_POST["date"]) || strlen(trim($_POST["date"])) == 0){
-                  $date = null;
+                  $date = NULL;
                 }
                 if (!isset($_POST["time"]) || strlen(trim($_POST["time"])) == 0){
-                  $time = null;
+                  $time = NULL;
                 }
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
                                 title, description, location, 
