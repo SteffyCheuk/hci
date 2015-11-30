@@ -126,19 +126,19 @@
       var id = $(this).text();
       $("#overlay").show();
       $("#modal-trash").append(" \
-        <form name='task-deletion' method='post' action='task.php'> \
+        <form name='task-deletion' method='post' action='tasks.php'> \
           <input type='hidden' value='" + id + "'>  \
           <input type='submit' name='delete-form' value='Yes'> \
           <input type='button' id='delete-cancel' name='cancel' value='No'> \
         </form> \
         ");
       $("#modal-trash").show();
-    });
-    $("#delete-cancel").click(function () {
-      $("#overlay").hide();
-      $("#modal").hide();
-      $("#modal-trash").html("<h4> Delete Task? </h4>");
-      $("#modal-trash").hide();
+      $("#delete-cancel").click(function () {
+        $("#overlay").hide();
+        $("#modal").hide();
+        $("#modal-trash").html("<h4> Delete Task? </h4>");
+        $("#modal-trash").hide();
+      });
     });
   }); 
 </script>
