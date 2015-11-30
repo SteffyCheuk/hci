@@ -6,4 +6,6 @@
   <input class="button" type="submit" value="submit">
 </form>
 
-<a class="button">Register</a>
+<form id="register" name="register" action="register.php">
+  <input class="button" type="submit" vallue="register">
+</form>
