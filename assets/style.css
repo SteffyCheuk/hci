@@ -40,7 +40,7 @@ html, body {
 }
 
 .navigation-list-item {
-  position: relative;
+  position: fixed;
   display: inline-block;
   height: 73px;
   width: 198px;
@@ -51,19 +51,23 @@ html, body {
 }
 
 .top-right {
-  float: right;
+  top: 0;
+  right: 0;
 }
 
 .top-left {
-  float: left;
+  top: 0;
+  left: 0;
 }
 
 .bottom-right {
-  float: right;
+  bottom: 0;
+  right: 0;
 }
 
 .bottom-left {
-  float: left;
+  bottom: 0;
+  left: 0;
 }
 
 a.navigation-link {
