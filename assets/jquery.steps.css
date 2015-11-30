@@ -153,6 +153,7 @@
     overflow: hidden;
     position: relative;
     width: 400px;
+    height: 400px;
 }
 
 .wizard.vertical > .content
