@@ -155,7 +155,7 @@
     $("#overlay").click(function() {
       $("#overlay").hide();
       $("#modal").hide();
-      $("#modal-trash").html("<h4 class='centered'> Delete Task? </h4>");
+      $("#modal-trash").html("<h3 class='centered'> Delete Task? </h3>");
       $("#modal-trash").hide();
     });
     $(".task-trash").click(function () {
