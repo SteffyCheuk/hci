@@ -37,6 +37,7 @@
 
         <!-- DISPLAY TASKS -->
         <?php 
+          session_start();
           if (isset($_SESSION["user"])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               // this means that an account was registered... or that a task was added. 

@@ -13,6 +13,7 @@
       <div id="success">
         <?php
           require_once "partials/DB.php";
+          session_start();
           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $type = $_POST["type"];
             $first_name = trim($_POST["first-name"]);
