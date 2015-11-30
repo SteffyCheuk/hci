@@ -48,7 +48,7 @@
         </section>
         <h3>Contacts</h3>
         <section>
-          Phone Number: <br/>
+          <span class="white"> Phone Number: </span><br/>
           <input type="text" name="phone">
         </section>
       </form>
