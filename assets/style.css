@@ -91,4 +91,5 @@ input[type="text"], input[type="password"] {
   padding: 0;
   width: 100%;
   border: none;
+  height: 40px;
 }
