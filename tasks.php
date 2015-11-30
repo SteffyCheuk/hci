@@ -79,7 +79,9 @@
                 echo 
                   "<tr> 
                     <td class='task-status'><img src='./images/white_check_box.png'></td>
-                    <td class='task-details'>{$row['title']}</td>
+                    <td class='task-details'>{$row['title']}
+                      <img src='./images/down_arrow_task.png' class='right'>
+                    </td>
                     <td class='task-trash'><img src='./images/trash.png'></td>
                   </tr> 
                   "; 
