@@ -33,6 +33,15 @@
               <td><input type="text" name="last-name"></td>
             </tr>
             <tr>
+              <td>Phone:</td>
+              <td><input type="text" name="phone"></td>
+            </tr>
+          </table>
+        </section>
+        <h4>Account</h4>
+        <section>
+          <table class="white">
+            <tr>
               <td>Email:</td>
               <td><input type="text" name="email"></td>
             </tr>
@@ -44,12 +53,6 @@
               <td>Confirm Password</td>
               <td><input type="password" name="password-validation"></td>
             </tr>
-          </table>
-        </section>
-        <h4>Contacts</h4>
-        <section>
-          <span class="white"> Phone Number: </span><br/>
-          <input type="text" name="phone">
         </section>
       </form>
       <?php 
