@@ -47,7 +47,7 @@
                 $description = $_POST["description"];
                 $location = $_POST["location"];
                 // data checking
-                if (!isset($_POST["date"]) || strlen(trim() == 0)){
+                if (!isset($_POST["date"]) || strlen(trim($_POST["date"]) == 0)){
                   $date = NULL;
                 }
                 else {
