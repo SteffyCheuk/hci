@@ -14,14 +14,14 @@
       <?php require_once "partials/DB.php"; ?>
       <!-- REGISTRATION WIZARD FORM -->
       <form id="registration" name="registration" method="post" action="tasks.php">
-        <h3>Register</h3>
+        <h4>Register</h4>
         <section>
           <input type="radio" id="caregiver" name="type" value="Caregiver">
           <label for="caregiver">I am a caregiver</label>
           <input type="radio" id="older-adult" name="type" value="OlderAdult">
           <label for="older-adult">I am an older adult</label>
         </section>
-        <h3>Details</h3>
+        <h4>Details</h4>
         <section>
           <table class="white">
             <tr>
@@ -46,7 +46,7 @@
             </tr>
           </table>
         </section>
-        <h3>Contacts</h3>
+        <h4>Contacts</h4>
         <section>
           <span class="white"> Phone Number: </span><br/>
           <input type="text" name="phone">
@@ -63,7 +63,7 @@
 <script>
   $(document).ready(function () {
      $("#registration").steps({
-      headerTag: "h3",
+      headerTag: "h4",
       bodyTag: "section",
       transitionEffect: "slideLeft",
       autoFocus: true
