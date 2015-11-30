@@ -48,6 +48,13 @@
                 $location = $_POST["location"];
                 $date = $_POST["date"];
                 $time = $_POST["time"];
+                // data checking
+                if (trim($date) == ''){
+                  $date = NULL;
+                }
+                if (trim($time) == ''){
+                  $time = NULL;
+                }
                 $sql = "INSERT INTO tasks (older_adult_id, owner_id, 
                                 title, description, location, 
                                 deadline_date, deadline_time,
