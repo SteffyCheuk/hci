@@ -59,7 +59,7 @@
             else {
               $arr = pg_fetch_all($result, 0, PGSQL_NUM);
               echo "<table>";
-              for ($i = 0; $i < count($arr), $i++) {
+              for ($i = 0; $i < count($arr); $i++) {
                 echo 
                   "<tr> 
                     <td><img src='./images/white_check_box.png'></td>
