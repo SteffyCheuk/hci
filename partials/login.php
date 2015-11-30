@@ -1,8 +1,10 @@
 <form id="login" name="login" method="post" action="tasks.php">
   Email: <br/>
-  <input id="email" type="text">
+  <input id="email" type="text"> 
+  <br/>
   Password: <br/>
   <input id="password" type="password">
+  <br/>
   <input class="button" type="submit" value="submit">
 </form>
 
