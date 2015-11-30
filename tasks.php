@@ -61,14 +61,12 @@
             $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
             if ($result) {
-              $arr = pg_fetch_all($result);
-              echo $arr;
               echo "<table>";
-              for ($i = 0; $i < count($arr); ++$i) {
+              while ($row = pg_fetch_assoc($result)) {
                 echo 
                   "<tr> 
                     <td><img src='./images/white_check_box.png'></td>
-                    <td>$arr[$i]['title']</td>
+                    <td>$row[$i]['title']</td>
                     <td><img src='./images/trash.png'></td>
                   </tr> 
                   "; 
