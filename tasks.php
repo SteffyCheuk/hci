@@ -45,7 +45,13 @@
           $_SESSION['user'] = 1;
           if (isset($_SESSION['user'])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-              // this means that an account was registered... or that a task was added. 
+              // DELETED TASK
+              if (isset($_POST["id"])) {
+                $id = $_POST["id"];
+                $sql = "DELETE FROM tasks WHERE id = {$id};"
+                $result = pg_query($db, $sql);
+              }
+              // ADDED TASK
               if (isset($_POST["title"])) {
                 $title = $_POST["title"];
                 $description = $_POST["description"];
@@ -74,7 +80,7 @@
                 $result = pg_query($db, $sql);
               }
             }
-            // display tasks
+            // DISPLAY TASKS
             $sql = "SELECT * FROM tasks WHERE older_adult_id = {$_SESSION['user']};";
             $result = pg_query($db, $sql);
             if ($result) {
@@ -127,7 +133,7 @@
       $("#overlay").show();
       $("#modal-trash").append(" \
         <form name='task-deletion' method='post' action='tasks.php'> \
-          <input type='hidden' value='" + id + "'>  \
+          <input type='hidden' name='id' value='" + id + "'>  \
           <input type='submit' name='delete-form' value='Yes'> \
           <input type='button' id='delete-cancel' name='cancel' value='No'> \
         </form> \
