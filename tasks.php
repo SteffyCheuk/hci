@@ -86,7 +86,7 @@
             if ($result) {
               echo "<table id='task-table' class='white'>";
               while ($row = pg_fetch_assoc($result)) {
-                if ($row["done"]) {
+                if ($row["done"] == true) {
                   $checkmark_class = 'checkmark';
                 }
                 else {
