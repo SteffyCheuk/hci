@@ -32,15 +32,12 @@ html, body {
 }
 
 .navigation-list-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   height: 73px;
   width: 198px;
   float: left;
   text-align: center;
   line-height: 73px;
+  font-size: 16px;
 }
 
 a.navigation-link {
@@ -52,7 +49,6 @@ a.navigation-link {
   border: 1px #6E6E6E solid;
   color: #1D2029;
   background-color: #C7E1FE;
-  text-align: center;
 }
 
 a.navigation-link:hover {
