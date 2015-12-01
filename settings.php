@@ -83,14 +83,6 @@
 
       <?php require_once "partials/DB.php"; ?>
       <?php include "partials/header.php"; ?>
-      <?php 
-        session_start();
-        $_SESSION['user'] = 1;
-        if (isset($_SESSION['user'])) {
-          // DISPLAY SETTINGS
-        }
-
-      ?>
 
       <!-- MAIN CONTENT GOES HERE -->
       <div id="profile" class="btn-settings">
