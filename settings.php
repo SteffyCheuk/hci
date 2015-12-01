@@ -14,7 +14,6 @@
         $_SESSION['user'] = 1;
         if (isset($_SESSION['user'])) {
           // DISPLAY SETTINGS
-          echo "<br/>";
         }
 
       ?>
