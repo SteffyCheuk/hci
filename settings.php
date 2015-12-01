@@ -20,16 +20,16 @@
 
       <!-- MAIN CONTENT GOES HERE -->
       <div id="profile" class="btn-settings">
-      
+        Profile
       </div>
       <div id="font-size" class="btn-settings">
-      
+        Font Size
       </div>
       <div id="language" class="btn-settings">
-      
+        Language
       </div>
       <div id="feedback" class="btn-settings">
-      
+        Feedback
       </div>
 
       <?php include "partials/navigation.php"; ?>

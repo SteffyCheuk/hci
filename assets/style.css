@@ -400,3 +400,7 @@ h3 {
   color: #C0C0C0;
   font-size: 24px;
 }
+
+.btn-settings:hover {
+  border-color: #E8E8E8;
+}
