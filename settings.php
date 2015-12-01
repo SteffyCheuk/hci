@@ -9,6 +9,78 @@
   <body>
     <div id="container">
       <div id="overlay"></div>
+      <!-- PROFILE POPUP -->
+      <div id='profile-modal' class='modal-settings'>
+        <div class='content-padding'>
+          <h4 class='centered'> 
+            Profile
+          </h4>
+          <img class='centered' src='./images/circle_with_camera.png'>
+          <table>
+            <tr>
+              <td> Phone: </td>
+              <td> xxx-xxx-xxxx </td> 
+            </tr>
+            <tr>
+              <td> E-mail: </td>
+              <td> name@domain.com </td> 
+            </tr>
+            <tr>
+              <td> Address: </td>
+              <td> ### Street St, City, State ##### </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- FONT SIZE POPUP -->
+      <div id="font-size-modal" class='modal-settings'>
+        <div class='content-padding'>
+          <h4 class='centered'> 
+            Font Size
+          </h4>
+          <div class="btn-font-sizes font-small">
+            Small
+          </div>
+          <div class="btn-font-sizes font-medium">
+            Medium
+          </div>
+          <div class="btn-font-sizes font-large">
+            Large
+          </div>
+        </div>
+      </div>
+      <!-- FONT SIZE POPUP -->
+      <div id="language-modal" class='modal-settings'>
+        <div class='content-padding'>
+          <h4 class='centered'> 
+            Language
+          </h4>
+          <div class="btn-font-sizes font-medium">
+            English
+          </div>
+          <div class="btn-font-sizes font-medium">
+            Mandarin
+          </div>
+          <div class="btn-font-sizes font-medium">
+            Korean
+          </div>
+        </div>
+      </div>
+      <!-- FEEDBACK POPUP -->
+      <div id='feedback-modal' class='modal-settings'>
+        <div class='content-padding'>
+          <h4 class='centered'> 
+            Feedback
+          </h4>
+          <form name='feedback-form' method='post' action=''>
+            <textarea name='feedback'></textarea>
+            <input class='right' type='submit' value='Submit'>
+          </form>
+        </div>          
+      </div>
+
+
+
       <?php require_once "partials/DB.php"; ?>
       <?php include "partials/header.php"; ?>
       <?php 
@@ -23,80 +95,16 @@
       <!-- MAIN CONTENT GOES HERE -->
       <div id="profile" class="btn-settings">
         Profile
-        <div class='modal-settings'>
-          <div class='content-padding'>
-            <h4 class='centered'> 
-              Profile
-            </h4>
-            <img class='centered' src='./images/circle_with_camera.png'>
-            <table>
-              <tr>
-                <td> Phone: </td>
-                <td> xxx-xxx-xxxx </td> 
-              </tr>
-              <tr>
-                <td> E-mail: </td>
-                <td> name@domain.com </td> 
-              </tr>
-              <tr>
-                <td> Address: </td>
-                <td> ### Street St, City, State ##### </td>
-              </tr>
-            </table>
-          </div>
-        </div>
       </div>
       <div id="font-size" class="btn-settings">
         Font Size
-        <div class='modal-settings'>
-          <div class='content-padding'>
-            <h4 class='centered'> 
-              Font Size
-            </h4>
-            <div class="btn-font-sizes font-small">
-              Small
-            </div>
-            <div class="btn-font-sizes font-medium">
-              Medium
-            </div>
-            <div class="btn-font-sizes font-large">
-              Large
-            </div>
-          </div>
-        </div>
       </div>
       <div id="language" class="btn-settings">
         Language
-        <div class='modal-settings'>
-          <div class='content-padding'>
-            <h4 class='centered'> 
-              Language
-            </h4>
-            <div class="btn-font-sizes">
-              English
-            </div>
-            <div class="btn-font-sizes">
-              Korean
-            </div>
-            <div class="btn-font-sizes">
-              Chinese
-            </div>
-          </div>
-        </div>
+       </div>
       </div>
       <div id="feedback" class="btn-settings">
         Feedback
-        <div class='modal-settings'>
-          <div class='content-padding'>
-            <h4 class='centered'> 
-              Feedback
-            </h4>
-            <form name='feedback-form' method='post' action=''>
-              <textarea name='feedback'></textarea>
-              <input class='right' type='submit' value='Submit'>
-            </form>
-          </div>          
-        </div>
       </div>
 
       <?php include "partials/navigation.php"; ?>
@@ -106,9 +114,21 @@
 
 <script>
   $(document).ready(function () {
-    $('.btn-settings').click(function () {
+    $('#profile').click(function () {
       $("#overlay").show();
-      $(this).find('.modal-settings').show();
+      $("#profile-modal").find('.modal-settings').show();
+    })
+    $('#font-size').click(function () {
+      $("#overlay").show();
+      $("#font-size-modal").find('.modal-settings').show();
+    })
+    $('#language').click(function () {
+      $("#overlay").show();
+      $("#language-modal").find('.modal-settings').show();
+    })
+    $('#feedback').click(function () {
+      $("#overlay").show();
+      $("#feedback-modal").find('.modal-settings').show();
     })
     $("#overlay").click(function() {
       $("#overlay").hide();
