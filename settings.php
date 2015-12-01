@@ -3,6 +3,7 @@
   <head>
     <title>M.A.P. - Memos and Protection </title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.js"></script>
   </head>
 
   <body>
