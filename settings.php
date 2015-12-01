@@ -101,7 +101,6 @@
       </div>
       <div id="language" class="btn-settings">
         Language
-       </div>
       </div>
       <div id="feedback" class="btn-settings">
         Feedback
