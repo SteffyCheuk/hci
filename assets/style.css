@@ -438,3 +438,16 @@ h3 {
 .font-medium { font-size: 24px; }
 
 .font-large { font-size: 32px; }
+
+#profile-image {
+  width: 102px;
+  height: 102px;
+  margin: 30px auto;
+}
+
+#feedback-textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 350px;
+}

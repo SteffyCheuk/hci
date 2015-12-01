@@ -15,7 +15,7 @@
           <h4 class='centered'> 
             Profile
           </h4>
-          <img class='centered' src='./images/circle_with_camera.png'>
+          <img id='profile-image' src='./images/circle_with_camera.png'>
           <table>
             <tr>
               <td> Phone: </td>
@@ -73,7 +73,7 @@
             Feedback
           </h4>
           <form name='feedback-form' method='post' action=''>
-            <textarea name='feedback'></textarea>
+            <textarea class='width-100' name='feedback'></textarea>
             <input class='right' type='submit' value='Submit'>
           </form>
         </div>          
