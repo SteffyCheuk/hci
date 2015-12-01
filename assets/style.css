@@ -389,3 +389,14 @@ h3 {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.btn-settings {
+  display: block;
+  width: 250px;
+  height: 70px;
+  margin: 15px auto;
+  border: 3px #C0C0C0 solid;
+  border-radius: 5px;
+  color: #C0C0C0;
+  font-size: 24px;
+}
