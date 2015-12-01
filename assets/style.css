@@ -446,11 +446,10 @@ h3 {
 }
 
 #feedback-textarea {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 296px;
+  max-width: 296px;
   min-height: 300px;
   max-height: 300px;
-  border-size: 1px;
 }
 
 #profile-table {
