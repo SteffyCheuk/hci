@@ -16,7 +16,7 @@
             Profile
           </h4>
           <img id='profile-image' src='./images/circle_with_camera.png'>
-          <table>
+          <table id='profile-table'>
             <tr>
               <td> Phone: </td>
               <td> xxx-xxx-xxxx </td> 

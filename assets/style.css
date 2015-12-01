@@ -452,3 +452,9 @@ h3 {
   max-height: 300px;
   border: 1px;
 }
+
+#profile-table {
+  border-collapse:separate; 
+  border-spacing:10px;
+  valign: top;
+}
