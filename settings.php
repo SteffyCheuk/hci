@@ -115,19 +115,19 @@
   $(document).ready(function () {
     $('#profile').click(function () {
       $("#overlay").show();
-      $("#profile-modal").find('.modal-settings').show();
+      $("#profile-modal").show();
     })
     $('#font-size').click(function () {
       $("#overlay").show();
-      $("#font-size-modal").find('.modal-settings').show();
+      $("#font-size-modal").show();
     })
     $('#language').click(function () {
       $("#overlay").show();
-      $("#language-modal").find('.modal-settings').show();
+      $("#language-modal").show();
     })
     $('#feedback').click(function () {
       $("#overlay").show();
-      $("#feedback-modal").find('.modal-settings').show();
+      $("#feedback-modal").show();
     })
     $("#overlay").click(function() {
       $("#overlay").hide();
