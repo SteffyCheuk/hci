@@ -73,7 +73,7 @@
             Feedback
           </h4>
           <form name='feedback-form' method='post' action=''>
-            <textarea class='width-100' name='feedback'></textarea>
+            <textarea id='feedback-textarea' name='feedback'></textarea>
             <input class='right' type='submit' value='Submit'>
           </form>
         </div>          
