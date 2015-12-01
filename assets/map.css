@@ -2,8 +2,12 @@
   height: 400px;
 }
 
-#slider {
+#settings {
   margin-top: 15px;
   margin-left: 58px;
   width: 82%;
+}
+
+#slider {
+  width: 100%;
 }
