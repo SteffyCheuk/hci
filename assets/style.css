@@ -414,6 +414,7 @@ h3 {
   font-size: 30px;
   text-align: center;
   line-height: 65px;
+  cursor: pointer;
 }
 
 .btn-settings:hover {
