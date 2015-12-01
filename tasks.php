@@ -42,7 +42,6 @@
         <!-- DISPLAY TASKS -->
         <?php 
           session_start();
-          $_SESSION['user'] = 1;
           if (isset($_SESSION['user'])){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               // DELETED TASK
